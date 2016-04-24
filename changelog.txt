@@ -1,0 +1,34 @@
+4/23/2016
+==========
++Updated Content on aboutme.html and index.html
++Updated CSS on aboutme.html in about-me.css
++Visit www.iuzeit.com!
+
+3/30/2016
+==========
++Added new site! "WordPress"
+
+3/24/2016
+==========
++Updated grammar on About Me page.
++Updated preview image for About Me page.
++Fixed JS on Hot or Cold app so "What?" button works properly.
+
+3/18/2016
+==========
++Added new application! "Hot or Cold"
+
+3/8/2016
+==========
++Updated content
+
+3/5/2016
+==========
++Fixed "The Shopping List" functionality in the Fire Fox web browser. 
+
+3/4/2016
+==========
++Repaired responsiveness for mobile.
++Fixed additional formatting issues all around. 
++Added additional styling
+
