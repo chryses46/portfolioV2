@@ -1,0 +1,60 @@
+.headnavbutton {
+	right: 17px;
+	top: 11px;
+	position: fixed;
+	background: url("../img/question.svg.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 1.0625em; 
+	height: 1.5em; 
+	z-index: 999999;
+	
+}
+
+.headnav {
+	display: none;
+	padding: .6em 0;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background: #808080;
+	border-radius: 0 0 0 1em;
+	z-index: 999998;
+}
+
+.headnav ul {
+	display: inline-table;
+	float: right;
+	margin-right: 3.2em;
+}
+
+.headnav ul li{
+	display: inline-block;
+	list-style: none;
+	position: relative;
+	float: left;
+	text-align: left;
+	margin-right: 1.5em;
+	letter-spacing: .08em;
+}
+
+.headnav ul li> a{
+	color: black;
+}
+
+.headnav ul ul {
+	display: none;
+	border-radius: 0 0 1em 1em;
+}
+
+.headnav ul li:hover > ul {
+	display: block;
+	position: absolute;
+	top: 100%;
+	background: gray;
+
+}
+
+
+
+/*End of Top Navigation declarations*/

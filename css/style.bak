@@ -1,0 +1,121 @@
+
+body {
+	font-family: "Istok Web", sans-serif;
+}
+
+.head {
+	text-align: center;
+	margin: 3em auto;
+	width: 50%
+}
+
+.head h1 {
+	margin-bottom: -.7em;
+}
+
+.intro {
+	margin: 0 auto;
+	height: 9em;
+	width: 50%;
+	text-align: justify;
+	text-indent: 2.5em;
+	letter-spacing: .02em;
+}
+
+.introimg {
+	height: 9em;
+	width: 9.9em;
+	border-radius: 4em;
+	float: left;
+}
+
+hr {
+	width: 9%;
+	border-radius: 5em;
+	border: .2em solid #808080;
+	opacity: .4;
+	margin: 2em auto;
+}
+
+.project {
+	margin: 0 auto;
+	height: 33em;
+	width: 50%;
+	text-align: center;
+	letter-spacing: .02em;
+}
+
+.view {
+	margin: 0 auto;
+	max-width: 495px;
+	height: 370px;
+	background: #fff;
+	border-radius: 4em;
+}
+
+.view img {
+	border-radius: 6em;
+}
+
+.footer {
+	margin: 0 auto;
+	height: 5em;
+	width: 50%;
+	text-align: center;
+}
+
+.footer ul {
+	padding: 0;
+}
+
+.footer ul li {
+	list-style: none;
+}
+
+.fa-linkedin-square {
+	color: #1a53ff; 
+}
+
+.fa-envelope {
+	color: #ff0000;
+}
+
+	
+
+@media only screen and (max-device-width: 700px) {
+
+	body {
+		font-size: 1.875em;
+	}
+
+	
+
+	.intro {
+		margin: 0 auto;
+		height: 22em;
+		width: 75%;
+	}
+
+	hr {
+		width: 9%;
+		border-radius: 5em;
+		border: .2em solid #808080;
+		opacity: .4;
+		margin: 1em auto;
+	}
+
+	.project {
+		margin: 0 auto;
+		height: 25em;
+		width: 75%;
+		text-align: center;
+		letter-spacing: .02em;
+	}
+
+	.footer {
+		margin: 0 auto;
+		height: 5em;
+		width: 75%;
+		text-align: center;
+	}
+}
