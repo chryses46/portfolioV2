@@ -1,7 +1,7 @@
 (function() {
     'use strict';
     angular
-        .module('portfolio', [])
+        .module('portfolio', ['ui.router'])
 
     // Attirbute Directives
     .directive('header', function() {
