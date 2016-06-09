@@ -2,6 +2,6 @@
     return {
         restrict: 'A',
         scope: false,
-        templateUrl: 'angular-app/directives/intro.html'
+        templateUrl: 'angular-app/attr-templates/intro.html'
     };
 });

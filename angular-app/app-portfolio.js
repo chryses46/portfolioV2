@@ -2,62 +2,70 @@
     'use strict';
     angular
         .module('portfolio', [])
-        // Attirbute Directives
-        .directive('header', function () {
+
+    // Attirbute Directives
+    .directive('header', function() {
             return {
                 restrict: 'A',
                 scope: false,
-                templateUrl: 'angular-app/directives/header.html'
+                templateUrl: 'angular-app/attr-templates/header.html'
             }
         })
-        .directive('footer', function () {
+        .directive('footer', function() {
             return {
                 restrict: 'A',
                 scope: false,
-                templateUrl: 'angular-app/directives/footer.html'
+                templateUrl: 'angular-app/attr-templates/footer.html'
             }
         })
-        .directive('intro', function () {
+        .directive('intro', function() {
             return {
                 restrict: 'A',
                 scope: false,
-                templateUrl: 'angular-app/directives/intro.html'
+                templateUrl: 'angular-app/attr-templates/intro.html'
             }
         })
         .directive('about', function() {
             return {
                 restrict: 'A',
                 scope: false,
-                templateUrl: 'angular-app/directives/about.html'
+                templateUrl: 'angular-app/attr-templates/about.html'
             };
         })
         .directive('ryu', function() {
             return {
                 restrict: 'A',
                 scope: false,
-                templateUrl: 'angular-app/directives/ryu.html'
+                templateUrl: 'angular-app/attr-templates/ryu.html'
             };
         })
         .directive('shopping', function() {
             return {
                 restrict: 'A',
                 scope: false,
-                templateUrl: 'angular-app/directives/shopping.html'
+                templateUrl: 'angular-app/attr-templates/shopping.html'
             }
         })
         .directive('hotcold', function() {
             return {
                 restrict: 'A',
                 scope: false,
-                templateUrl: 'angular-app/directives/hotcold.html'
+                templateUrl: 'angular-app/attr-templates/hotcold.html'
             }
         })
         .directive('wordpress', function() {
             return {
                 restrict: 'A',
                 scope: false,
-                templateUrl: 'angular-app/directives/wordpress.html'
+                templateUrl: 'angular-app/attr-templates/wordpress.html'
             }
         })
         // Project Directives
+        .directive('aboutMe', function() {
+            return {
+                restrict: 'A',
+                scope: false,
+                templateUrl: 'angular-app/site-templates/about-me-proj.html'
+            }
+        })
 })();

@@ -3,6 +3,6 @@ angular.module('portfolio')
 		return {
 			restrict: 'A',
 			scope: false,
-			templateUrl: 'angular-app/directives/shopping.html'
+			templateUrl: 'angular-app/attr-templates/shopping.html'
 		};
 	});

@@ -3,6 +3,6 @@ angular.module('portfolio')
         return {
             restrict: 'A',
             scope: false,
-            templateUrl: 'angular-app/directives/ryu.html'
+            templateUrl: 'angular-app/attr-templates/ryu.html'
         };
     });
