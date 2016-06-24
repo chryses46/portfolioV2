@@ -4,26 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="img/icon.png">
-    <title>Daniel Frank- Web Developer</title>
+    <title>{{title}}</title>
     <!-- Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=EB+Garamond' >
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Libraries -->
     <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
     <script src="js/angular.min.js"></script>
     <script src="js/angular-ui-router.min.js"></script>
     <!-- Common Scripts -->
-    <script type="text/javascript" src="js/js.js"></script>
+    
     <!-- Angular App -->
     <script src="angular-app/app-portfolio.js"></script>
 </head>
 <body>
-    <header header></header>
+    <header nav></header>
     <div ui-view></div>
     <footer footer></footer>
+
+    <script type="text/javascript" src="js/js.js"></script>
 </body>
 
 </html>

@@ -1,234 +1,216 @@
 body {
-	font-family: "EB Garamond", sans-serif;
-	font-size: 2em;
+    font-family: "EB Garamond", sans-serif;
+    font-size: 2em;
 }
 
 .head {
-	text-align: center;
-	margin: 3em auto;
-	width: 50%;
+    text-align: center;
+    margin: 3em auto;
+    width: 50%;
 }
 
 .head img {
-	float: right;
-
+    float: right;
 }
 
 .head h1 {
-	margin-bottom: -.4em;
-	font-size: 4em;
+    margin-bottom: -.4em;
+    font-size: 4em;
 }
 
 .head h2 {
-	font-size: 1.7em;
+    font-size: 1.7em;
 }
 
-/*Top Navigation styling declrations (Including drop-down)*/
-
+//Top Navigation Styling
 .headnavbutton {
-	right: 17px;
-	top: 11px;
-	position: fixed;
-	background: url("../img/question.svg.png");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	width: 1.0625em; 
-	height: 1.5em; 
-	z-index: 999999;
-	
+    right: 17px;
+    top: 11px;
+    position: fixed;
+    background: url("../img/question.svg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 1.0625em;
+    height: 1.5em;
+    z-index: 999999;
 }
 
 .headnavbutton:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .headnav {
-	display: none;
-	padding: .6em 0;
-	position: fixed;
-	top: 0;
-	right: 0;
-	background: #808080;
-	border-radius: 0 0 1em 1em;
-	z-index: 999998;
+    display: none;
+    padding: .6em 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #808080;
+    border-radius: 0 0 1em 1em;
+    z-index: 999998;
 }
 
 .headnav ul {
-	display: inline-table;
-	float: right;
-	margin-right: 3.2em;
+    display: inline-table;
+    float: right;
+    margin-right: 3.2em;
 }
 
-.headnav ul li{
-	list-style: none;
-	position: relative;
-	float: left;
-	text-align: left;
-	margin-right: 1.5em;
-	letter-spacing: .08em;
+.headnav ul li {
+    list-style: none;
+    position: relative;
+    float: left;
+    text-align: left;
+    margin-right: 1.5em;
+    letter-spacing: .08em;
 }
 
-.headnav ul li> a{
-	color: black;
+.headnav ul li> a {
+    color: black;
 }
 
 .headnav ul li> a:hover {
-	text-decoration: none;
-	color: #ffffff;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .headnav ul ul {
-	display: none;
-	border-radius: 0 0 1em 1em;
-
+    display: none;
+    border-radius: 0 0 1em 1em;
 }
 
 .headnav ul li:hover > ul {
-	display: block;
-	position: absolute;
-	top: 100%;
-	background: gray;
-
+    display: block;
+    position: absolute;
+    top: 100%;
+    background: gray;
 }
 
 .headnav ul ul li {
-	text-align: left;
-	list-style-type: circle; 
+    text-align: left;
+    list-style-type: circle;
 }
 
-
-
-/*End of Top Navigation declarations*/
-
 .intro {
-	margin: 0 auto;
-	width: 50%;
-	text-align: justify;
-	text-indent: 2.5em;
-	letter-spacing: .02em;
+    margin: 0 auto;
+    width: 50%;
+    text-align: justify;
+    text-indent: 2.5em;
+    letter-spacing: .02em;
 }
 
 .introimg {
-	height: 9em;
-	width: 9.9em;
-	border-radius: 4em;
-	float: left;
+    height: 9em;
+    width: 9.9em;
+    border-radius: 4em;
+    float: left;
 }
 
 hr {
-	width: 9%;
-	border-radius: 5em;
-	border: .2em solid #808080;
-	opacity: .4;
-	margin: 2em auto;
+    width: 9%;
+    border-radius: 5em;
+    border: .2em solid #808080;
+    opacity: .4;
+    margin: 2em auto;
 }
 
 .project {
-	margin: 0 auto;
-	width: 50%;
-	text-align: center;
-	letter-spacing: .02em;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    letter-spacing: .02em;
 }
 
 .view {
-	margin: 0 auto;
-	max-width: 495px;
-	height: 370px;
-	background: #fff;
-	border-radius: 4em;
+    margin: 0 auto;
+    max-width: 495px;
+    height: 370px;
+    background: #fff;
+    border-radius: 4em;
 }
 
 .view.about {
-	background: url('../img/aboutme.jpg');
-	background-size: contain;
-	background-repeat: no-repeat;
+    background: url('../img/aboutme.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .view.ryu {
-	background: url('../img/streetfighterlogo.png');
-	background-size: contain;
-	background-repeat: no-repeat;
+    background: url('../img/streetfighterlogo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .view.shopping {
-	background: url('../img/shoppinglist.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
+    background: url('../img/shoppinglist.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .view.hotorcold {
-	background: url('../img/hotorcold.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
+    background: url('../img/hotorcold.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .view.wordpress {
-	background: url('../img/wordpress.jpg');
-	background-size: contain;
-	background-repeat: no-repeat;
+    background: url('../img/wordpress.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .view img {
-	border-radius: 6em;
+    border-radius: 6em;
 }
 
 .footer {
-	margin: 0 auto;
-	height: 5em;
-	width: 50%;
-	text-align: center;
+    margin: 0 auto;
+    height: 5em;
+    width: 50%;
+    text-align: center;
 }
 
 .footer ul {
-	padding: 0;
+    padding: 0;
 }
 
 .footer ul li {
-	list-style: none;
-	display: inline;
+    list-style: none;
+    display: inline;
 }
 
 .fa-linkedin-square {
-	color: #1a53ff; 
+    color: #1a53ff;
 }
 
 .fa-envelope {
-	color: #ff0000;
+    color: #ff0000;
 }
 
-	
-
 @media only screen and (max-device-width: 700px) {
-
-	body {
-		font-size: 2.5em;
-	}
-
-	
-
-	.intro {
-		margin: 0 auto;
-		width: 75%;
-	}
-
-	hr {
-		width: 9%;
-		border-radius: 5em;
-		border: .2em solid #808080;
-		opacity: .4;
-		margin: 1em auto;
-	}
-
-	.project {
-		margin: 0 auto;
-		width: 75%;
-		text-align: center;
-		letter-spacing: .02em;
-	}
-
-	.footer {
-		margin: 0 auto;
-		width: 75%;
-		text-align: center;
-	}
+    body {
+        font-size: 2.5em;
+    }
+    .intro {
+        margin: 0 auto;
+        width: 75%;
+    }
+    hr {
+        width: 9%;
+        border-radius: 5em;
+        border: .2em solid #808080;
+        opacity: .4;
+        margin: 1em auto;
+    }
+    .project {
+        margin: 0 auto;
+        width: 75%;
+        text-align: center;
+        letter-spacing: .02em;
+    }
+    .footer {
+        margin: 0 auto;
+        width: 75%;
+        text-align: center;
+    }
 }

@@ -7,16 +7,39 @@
             $stateProvider
                 .state('home', {
                     url: '/home',
-                    title: 'About Me',
+                    title: "Daniel Frank- web Developer",
                     templateUrl: 'angular-app/site-templates/home.html'
                 })
+                .state('about', {
+                    url: '/about',
+                    title: "About Me",
+                    templateUrl: 'angular-app/site-templates/about-me-proj.html'
+                })
+                .state('ryu', {
+                    url: '/ryu',
+                    title: "Ryu jQuery Page",
+                    templateUrl: 'angular-app/site-templates/ryu-proj.html'
+                })
+                .state('shop', {
+                    url: '/shop',
+                    title: "Shopping List App",
+                    templateUrl: 'angular-app/site-templates/shop-proj.html'
+                })
+                .state('hotcold', {
+                    url: '/hotcold',
+                    title: "Hot or Cold App",
+                    templateUrl: 'angular-app/site-templates/hotcold-proj.html'
+                })
         })
+
     // Attirbute Directives
-        .directive('header', function() {
+        .directive('nav', function() {
             return {
                 restrict: 'A',
+                controller: 'NavController',
+                controllerAs: 'nav',
                 scope: false,
-                templateUrl: 'angular-app/attr-templates/header.html'
+                templateUrl: 'angular-app/attr-templates/nav.html'
             }
         })
         .directive('footer', function() {
@@ -70,11 +93,11 @@
         })
 
     // Project Directives
-    .directive('aboutMe', function() {
+    /*.directive('aboutMe', function() {
         return {
             restrict: 'A',
             scope: false,
             templateUrl: 'angular-app/site-templates/about-me-proj.html'
         }
-    })
+    })*/
 })();
