@@ -1,3 +1,8 @@
+6/23/2016
+==========
++Implemented AngularJS!
++Code base cleaned up
+
 4/23/2016
 ==========
 +Updated Content on aboutme.html and index.html
