@@ -1,21 +1,22 @@
 <!-- navigation bar-->
-<div class="arrowholder">
-    <div id="headnavbutton" class="down"></div>
+<div ng-controller="NavController">
+    <div class="arrowholder">
+        <div id="headnavbutton" ng-click="showNav();" class="down"></div>
+    </div>
+    <nav id="headnav">
+        <ul>
+            <li id="home" ng-click="menuClick();"><a href="#/home" title="Home"><i class="fa fa-home"></i></a></li>
+            <li id="projects" ng-click="showList();"><a title="Projects" id="proj"><i class="fa fa-edit"></i></a>
+                <ul class="projects" ng-click="collapse(this.children());">
+                    <li><a href="#/about">About Me</a></li>
+                    <li><a href="#/ryu">Ryu jQuery Page</a></li>
+                    <li><a href="#/shop">Shopping List App</a></li>
+                    <li><a href="#/hotcold">Hot or Cold App</a></li>
+                    <li><a href="http://danielfrank.info/wordpress" target="_blank">My WordPress</a></li>
+                </ul>
+            </li>
+            <li id="mail" ng-click="menuClick();"><a href="mailto:danjfrank08@gmail.com" title="Contact Me"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+    </nav>
 </div>
-<nav id="headnav">
-    <ul>
-        <li><a href="#/home" title="Home"><i class="fa fa-home"></i></a></li>
-        <li><a title="Projects"><i class="fa fa-edit"></i></a>
-            <ul class="projects">
-                <li><a href="#/about">About Me</a></li>
-                <li><a href="#/ryu">Ryu jQuery Page</a></li>
-                <li><a href="#/shop">Shopping List App</a></li>
-                <li><a href="#/hotcold">Hot or Cold App</a></li>
-                <li><a href="http://danielfrank.info/wordpress" target="_blank">My WordPress</a></li>
-            </ul>
-        </li>
-        <li><a href="mailto:danjfrank08@gmail.com" title="Contact Me"><i class="fa fa-envelope"></i></a></li>
-    </ul>
-</nav>
- <script type="text/javascript" src="/js/js.js"></script>
 

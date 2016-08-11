@@ -45,11 +45,19 @@ hr {
     margin: 2em auto;
 }
 
+
+
 .project {
     margin: 0 auto;
     width: 50%;
-    text-align: center;
+    text-align: justify;
+    text-indent: 2em;
     letter-spacing: .02em;
+}
+
+.project h1 {
+    text-indent: 0;
+    text-align: center;
 }
 
 .view {
@@ -103,6 +111,7 @@ hr {
 
 .footer ul {
     padding: 0;
+    padding-top: 2.5em;
 }
 
 .footer ul li {
@@ -118,9 +127,10 @@ hr {
     color: #ff0000;
 }
 
+/*Reponsiveness*/
 @media only screen and (max-device-width: 700px) {
     body {
-        font-size: 2.5em;
+        font-size: 10pt;
     }
     .intro {
         margin: 0 auto;
@@ -136,9 +146,20 @@ hr {
     .project {
         margin: 0 auto;
         width: 75%;
+        font-size: 10pt;
         text-align: center;
         letter-spacing: .02em;
     }
+
+    .view {
+        height: 13em;
+        width: 15em;
+    }
+
+    .project h1 {
+        font-size: 20pt;
+    }
+
     .footer {
         margin: 0 auto;
         width: 75%;

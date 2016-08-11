@@ -1,11 +1,14 @@
 .arrowholder{
-	background: #fff;
 	position: fixed;
 	top: 0;
 	width: 100%;
 	height: 1.5em;
 	z-index: 999998;
+	left: 0;
 	text-align: center;
+	background: -webkit-linear-gradient( top, rgba(205, 205, 205, 0), rgba(200, 200, 200, .9));
+	background: -moz-linear-gradient( top, rgba(205, 205, 205, 0), rgba(200, 200, 200, .9));
+	background: -o-linear-gradient( top, rgba(205, 205, 205, 0), rgba(200, 200, 200, .9));
 }
 
 #headnavbutton{
@@ -33,22 +36,28 @@
 	display: none;
 	position: fixed;
 	top: 1.5em;
+	left: 0;
 	width: 100%;
-	border-radius: 0 0 0 1em;
 	z-index: 999998;
 	text-align: center;
-	background-color: #fff;
+	background-color: rgb(200, 200, 200);
+	opacity: .9;
 }
 
 #headnav ul {
 	display: inline-table;
+	margin: 0 auto;
+	padding: 0;
 }
 
-#headnav ul li{
+#headnav #home,
+#headnav #projects,
+#headnav #mail{
 	display: inline-block;
 	list-style: none;
-	margin-right: 1.5em;
+	margin: 0 1em;
 	letter-spacing: .08em;
+	background-color: rgb(200, 200, 200);
 }
 
 #headnav ul li:hover {
@@ -62,24 +71,21 @@
 #headnav .projects {
 	display: none;
 	border-radius: 0 0 1em 1em;
-}
-
-#headnav ul li:hover > .projects {
-	display: block;
 	position: absolute;
 	top: 100%;
-	background-color: #fff;
+	background-color: rgb(200, 200, 200);
 	left: 0;
+	width: 100%;
 }
 
-.projects li{
-	display: inline-block !important;
+
+.projects > li{
+	display: inline-block;
 	list-style: none;
-	position: relative !important;
-	margin-right: 1.5em;
-	letter-spacing: .08em;
-	background-color: #fff;
+	position: relative;
 	z-index: 999998;
+	text-transform: none;
+	margin: 0 .5em;
 }
 
 .fa-edit {
@@ -88,4 +94,12 @@
 
 .fa-envelope {
 	color: #ff0000;
+}
+
+@media only screen and (max-device-width: 700px){
+	.projects > li {
+	width: 100%;
+	text-align: center;
+	}
+
 }
