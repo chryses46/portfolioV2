@@ -1,7 +1,8 @@
-6/23/2016
+8/10/2016
 ==========
-+Implemented AngularJS!
-+Code base cleaned up
++Completed Angular.JS implementation
++Added a new nav bar
++Fixed various project mobile responsiveness
 
 4/23/2016
 ==========
