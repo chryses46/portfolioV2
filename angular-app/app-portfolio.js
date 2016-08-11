@@ -7,7 +7,7 @@
             $stateProvider
                 .state('home', {
                     url: '/home',
-                    title: "Daniel Frank- web Developer",
+                    title: "Daniel Frank- Web Developer",
                     templateUrl: 'angular-app/site-templates/home.html'
                 })
                 .state('about', {
@@ -38,7 +38,8 @@
                 restrict: 'A',
                 scope: false,
                 templateUrl: 'angular-app/attr-templates/nav.html',
-                controller: 'NavController'
+                controller: 'NavController',
+                controllerAs: 'nav'
             }
         })
         .directive('footer', function() {

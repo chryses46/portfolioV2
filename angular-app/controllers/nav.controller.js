@@ -26,12 +26,7 @@ angular.module('portfolio')
             $('.projects').hide();
         }
 
-        $scope.homeClick = function() {
-            $('#headnav').hide();
-            $('#headnavbutton').toggleClass("up");
-        }
-
-        $scope.mailClick = function() {
+        $scope.menuClick = function() {
             $('#headnav').hide();
             $('#headnavbutton').toggleClass("up");
         }
