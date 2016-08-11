@@ -16,10 +16,54 @@ body {
 .head h1 {
     margin-bottom: -.4em;
     font-size: 4em;
+    overflow: hidden;
+    width: 100%;
 }
 
 .head h2 {
     font-size: 1.7em;
+}
+
+#fname {
+    position: relative;
+    animation: rightSlide 2s; 
+}
+
+#lname {
+    position: relative;
+    animation:leftSlide 2s;
+}
+
+#subTitle {
+    opacity: 0;
+    animation: titleAppear 2s 2s forwards;
+}
+
+@keyframes rightSlide {
+    from {
+        right: 15em;
+    }
+    to {
+        right: 0;
+    }
+}
+
+@keyframes leftSlide {
+    from {
+        left: 15em;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes titleAppear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .intro {
@@ -44,8 +88,6 @@ hr {
     opacity: .4;
     margin: 2em auto;
 }
-
-
 
 .project {
     margin: 0 auto;
@@ -127,10 +169,16 @@ hr {
     color: #ff0000;
 }
 
+
 /*Reponsiveness*/
-@media only screen and (max-device-width: 700px) {
+
+@media only screen and (max-width: 700px) {
     body {
         font-size: 10pt;
+    }
+    .head {
+        width: 100%;
+        margin: 0 auto;
     }
     .intro {
         margin: 0 auto;
@@ -150,16 +198,13 @@ hr {
         text-align: center;
         letter-spacing: .02em;
     }
-
     .view {
         height: 13em;
         width: 15em;
     }
-
     .project h1 {
         font-size: 20pt;
     }
-
     .footer {
         margin: 0 auto;
         width: 75%;
