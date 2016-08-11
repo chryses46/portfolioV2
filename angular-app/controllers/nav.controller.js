@@ -1,7 +1,16 @@
 angular.module('portfolio')
     .controller('NavController', function($scope, $location) {
-        var nav = this;
-
+        $scope.projects = [
+            {   title: "About Me",
+                href: "#/about"},
+            {   title: "Ryu jQuery Page",
+                href: "#/ryu"},
+            {   title: "Shopping List",
+                href: "#/shop"},
+            {   title: "Hot or Cold",
+                href: "#/hotcold"},
+            {   title: "My WordPress",
+                href: "http://danielfrank.info/wordpress"}]
 
         $scope.showNav = function() {
             if ($('#headnavbutton').hasClass("down")) {
@@ -14,20 +23,20 @@ angular.module('portfolio')
         }
 
         $scope.showList = function() {
-            if ($('.projects').prop('style').display == "none") {
+            if ($('.projects').css('display') == 'none') {
                 $('.projects').show();
             } else
                 $('.projects').hide();
-        }
-
-        $scope.collapse = function(click) {
-            $('#headnav').hide();
-            $('#headnavbutton').toggleClass("up");
-            $('.projects').hide();
         }
 
         $scope.menuClick = function() {
             $('#headnav').hide();
             $('#headnavbutton').toggleClass("up");
         }
+
+        $scope.collapse = function() {
+            $('.projects').hide();
+            $('#headnav').hide();
+            $('#headnavbutton').toggleClass("up");
+        };
     });
