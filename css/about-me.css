@@ -109,7 +109,7 @@ ul {
   color: #1a53ff;
 }
 
-@media only screen and (max-device-width: 700px) {
+@media only screen and (max-width: 700px) {
   .masthead-heading {
     font-size: 1em;
     color: #e65c00;
