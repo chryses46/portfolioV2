@@ -33,11 +33,12 @@
         })
 
     // Attirbute Directives
-        .directive('nav', function() {
+    .directive('nav', function() {
             return {
                 restrict: 'A',
                 scope: false,
-                templateUrl: 'angular-app/attr-templates/nav.html'
+                templateUrl: 'angular-app/attr-templates/nav.html',
+                controller: 'NavController'
             }
         })
         .directive('footer', function() {
