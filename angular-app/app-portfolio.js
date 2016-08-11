@@ -36,8 +36,6 @@
         .directive('nav', function() {
             return {
                 restrict: 'A',
-                controller: 'NavController',
-                controllerAs: 'nav',
                 scope: false,
                 templateUrl: 'angular-app/attr-templates/nav.html'
             }
@@ -91,13 +89,4 @@
                 templateUrl: 'angular-app/attr-templates/wordpress.html'
             }
         })
-
-    // Project Directives
-    /*.directive('aboutMe', function() {
-        return {
-            restrict: 'A',
-            scope: false,
-            templateUrl: 'angular-app/site-templates/about-me-proj.html'
-        }
-    })*/
 })();

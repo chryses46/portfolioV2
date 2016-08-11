@@ -1,60 +1,91 @@
-.headnavbutton {
-	right: 17px;
-	top: 11px;
-	position: fixed;
-	background: url("../img/question.svg.png");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	width: 1.0625em; 
-	height: 1.5em; 
-	z-index: 999999;
-	
-}
-
-.headnav {
-	display: none;
-	padding: .6em 0;
+.arrowholder{
+	background: #fff;
 	position: fixed;
 	top: 0;
-	right: 0;
-	background: #808080;
+	width: 100%;
+	height: 1.5em;
+	z-index: 999998;
+	text-align: center;
+}
+
+#headnavbutton{
+	margin: 0 auto;
+	width: 4.5em;
+	height: 1.5em;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#headnavbutton.down{
+	background-image: url("../img/arrow-down.png");
+}
+
+#headnavbutton.up {
+	background-image: url("../img/arrow-up.png");
+
+}
+
+#headnavbutton:hover {
+	cursor: pointer;
+}
+
+#headnav {
+	display: none;
+	position: fixed;
+	top: 1.5em;
+	width: 100%;
 	border-radius: 0 0 0 1em;
 	z-index: 999998;
+	text-align: center;
+	background-color: #fff;
 }
 
-.headnav ul {
+#headnav ul {
 	display: inline-table;
-	float: right;
-	margin-right: 3.2em;
 }
 
-.headnav ul li{
+#headnav ul li{
 	display: inline-block;
 	list-style: none;
-	position: relative;
-	float: left;
-	text-align: left;
 	margin-right: 1.5em;
 	letter-spacing: .08em;
 }
 
-.headnav ul li> a{
+#headnav ul li:hover {
+	cursor: pointer;
+}
+
+#headnav ul li> a{
 	color: black;
 }
 
-.headnav ul ul {
+#headnav .projects {
 	display: none;
 	border-radius: 0 0 1em 1em;
 }
 
-.headnav ul li:hover > ul {
+#headnav ul li:hover > .projects {
 	display: block;
 	position: absolute;
 	top: 100%;
-	background: gray;
-
+	background-color: #fff;
+	left: 0;
 }
 
+.projects li{
+	display: inline-block !important;
+	list-style: none;
+	position: relative !important;
+	margin-right: 1.5em;
+	letter-spacing: .08em;
+	background-color: #fff;
+	z-index: 999998;
+}
 
+.fa-edit {
+	color: rgba(27, 117, 255, 0.93);
+}
 
-/*End of Top Navigation declarations*/
+.fa-envelope {
+	color: #ff0000;
+}

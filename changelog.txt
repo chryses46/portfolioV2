@@ -1,3 +1,9 @@
+8/10/2016
+==========
++Completed Angular.JS implementation
++Added a new nav bar
++Fixed various project mobile responsiveness
+
 4/23/2016
 ==========
 +Updated Content on aboutme.html and index.html
