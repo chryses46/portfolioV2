@@ -1,7 +1,7 @@
 (function() {
     'use strict';
     angular
-        .module('portfolio', ['ui.router'])
+        .module('portfolio', ['ui.router', 'ngTouch'])
         .config(function($stateProvider, $urlRouterProvider) {
             $urlRouterProvider.otherwise('/home');
             $stateProvider
