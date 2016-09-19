@@ -1,13 +1,13 @@
 (function() {
     'use strict';
     angular
-        .module('portfolio', ['ui.router'])
+        .module('portfolio', ['ui.router', 'ngTouch'])
         .config(function($stateProvider, $urlRouterProvider) {
             $urlRouterProvider.otherwise('/home');
             $stateProvider
                 .state('home', {
                     url: '/home',
-                    title: "Daniel Frank- web Developer",
+                    title: "Daniel Frank- Web Developer",
                     templateUrl: 'angular-app/site-templates/home.html'
                 })
                 .state('about', {
@@ -33,11 +33,13 @@
         })
 
     // Attirbute Directives
-        .directive('nav', function() {
+    .directive('nav', function() {
             return {
                 restrict: 'A',
                 scope: false,
-                templateUrl: 'angular-app/attr-templates/nav.html'
+                templateUrl: 'angular-app/attr-templates/nav.html',
+                controller: 'NavController',
+                controllerAs: 'nav'
             }
         })
         .directive('footer', function() {
