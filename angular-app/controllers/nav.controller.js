@@ -1,6 +1,8 @@
 angular.module('portfolio')
     .controller('NavController', function($scope, $location) {
         $scope.projects = [
+            {   title: "iuzeit Inc.",
+                href: "http://beta.iuzeit.com"},
             {   title: "About Me",
                 href: "#/about"},
             {   title: "Ryu jQuery Page",

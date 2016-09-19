@@ -113,6 +113,12 @@ hr {
     border-radius: 4em;
 }
 
+.view.iuzeit {
+    background: url('../img/iuzeit.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .view.about {
     background: url('../img/aboutme.jpg');
     background-size: contain;
