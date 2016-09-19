@@ -16,10 +16,57 @@ body {
 .head h1 {
     margin-bottom: -.4em;
     font-size: 4em;
+    overflow: hidden;
+    width: 100%;
 }
 
 .head h2 {
     font-size: 1.7em;
+}
+
+#fname {
+    position: relative;
+    -webkit-animation: rightSlide 2s; 
+    animation: rightSlide 2s; 
+}
+
+#lname {
+    position: relative;
+    -webkit-animation:leftSlide 2s;
+    animation:leftSlide 2s;
+}
+
+#subTitle {
+    opacity: 0;
+    -webkit-animation: titleAppear 2s 2s forwards;
+    animation: titleAppear 2s 2s forwards;
+}
+
+@keyframes rightSlide {
+    from {
+        right: 15em;
+    }
+    to {
+        right: 0;
+    }
+}
+
+@keyframes leftSlide {
+    from {
+        left: 15em;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes titleAppear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .intro {
@@ -48,8 +95,14 @@ hr {
 .project {
     margin: 0 auto;
     width: 50%;
-    text-align: center;
+    text-align: justify;
+    text-indent: 2em;
     letter-spacing: .02em;
+}
+
+.project h1 {
+    text-indent: 0;
+    text-align: center;
 }
 
 .view {
@@ -103,6 +156,7 @@ hr {
 
 .footer ul {
     padding: 0;
+    padding-top: 2.5em;
 }
 
 .footer ul li {
@@ -118,9 +172,16 @@ hr {
     color: #ff0000;
 }
 
-@media only screen and (max-device-width: 700px) {
+
+/*Reponsiveness*/
+
+@media only screen and (max-width: 700px) {
     body {
-        font-size: 2.5em;
+        font-size: 10pt;
+    }
+    .head {
+        width: 100%;
+        margin: 0 auto;
     }
     .intro {
         margin: 0 auto;
@@ -136,8 +197,16 @@ hr {
     .project {
         margin: 0 auto;
         width: 75%;
+        font-size: 10pt;
         text-align: center;
         letter-spacing: .02em;
+    }
+    .view {
+        height: 13em;
+        width: 15em;
+    }
+    .project h1 {
+        font-size: 20pt;
     }
     .footer {
         margin: 0 auto;

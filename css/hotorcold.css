@@ -2,82 +2,6 @@
    Common Styles
 ---------------------------------------------------------------------------------*/
 
-
-/*Top Navigation styling declrations (Including drop-down)*/
-
-.headnavbutton {
-	right: 17px;
-	top: 11px;
-	position: fixed;
-	background: url("../img/question.svg.png");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	width: 1.0625em; 
-	height: 1.5em; 
-	z-index: 999999;
-	
-}
-
-.headnavbutton:hover {
-	cursor: pointer;
-}
-
-.headnav {
-	display: none;
-	padding: .6em 0;
-	position: fixed;
-	top: 0;
-	right: 0;
-	background: #808080;
-	border-radius: 0 0 1em 1em;
-	z-index: 999998;
-}
-
-.headnav ul {
-	display: inline-table;
-	float: right;
-	margin-right: 3.2em;
-}
-
-.headnav ul li{
-	list-style: none;
-	position: relative;
-	float: left;
-	text-align: left;
-	margin-right: 1.5em;
-	letter-spacing: .08em;
-}
-
-.headnav ul li> a{
-	color: black;
-}
-
-.headnav ul li> a:hover {
-	text-decoration: none;
-	color: #ffffff;
-}
-
-.headnav ul ul {
-	display: none;
-	border-radius: 0 0 1em 1em;
-
-}
-
-.headnav ul li:hover > ul {
-	display: block;
-	position: absolute;
-	top: 100%;
-	background: gray;
-
-}
-
-.headnav ul ul li {
-	text-align: left;
-	list-style-type: circle; 
-}
-
-/*End of Top Navigation declarations*/
-
 /*float styles*/
 .clearfix:before,
 .clearfix:after {
@@ -105,7 +29,7 @@ body {
 	position: relative;
 	width: 98%;
 	height: 96%;
-	margin: 0.8em auto;
+	margin: 2em auto 0 auto;
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 	background-color: #1F253D;
 	text-align: center;
@@ -130,28 +54,28 @@ ul li {
    Header Styles
 ---------------------------------------------------------------------------------*/
 
-nav {
+.top-nav {
 	position: relative;
 	height: 10%;
 	padding: 1em;
 }
 
-nav ul li {
+.what,
+.new{
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 1.2em;
 }
 
-nav ul li:first-child {
+.what {
 	float: left;
 }
 
-nav ul li:last-child {
+.new{
 	float: right;
 }
 
-nav a {
-
+.top-nav a {
 	color: #fff;
 }
 
@@ -161,6 +85,11 @@ h1 {
 	padding: 0.8em;
 	color: #fff;
 
+}
+
+.what,
+.new:hover {
+	cursor: pointer;
 }
 
 /*style for hidden modal*/
@@ -253,35 +182,6 @@ h1 {
 	-moz-border-radius: 4px;
 	border-radius: 4px;
 	margin: 0 auto;
-
-	box-shadow: rgb(26, 31, 52) 1px 1px,
-    rgb(26, 31, 52) 2px 2px,
-    rgb(26, 31, 52) 3px 3px,
-    rgb(26, 31, 53) 4px 4px,
-    rgb(26, 32, 53) 5px 5px,
-    rgb(27, 32, 53) 6px 6px,
-    rgb(27, 32, 54) 7px 7px,
-    rgb(27, 32, 54) 8px 8px,
-    rgb(27, 32, 54) 9px 9px,
-    rgb(27, 33, 55) 10px 10px,
-    rgb(27, 33, 55) 11px 11px,
-    rgb(28, 33, 55) 12px 12px,
-    rgb(28, 33, 56) 13px 13px,
-    rgb(28, 34, 56) 14px 14px,
-    rgb(28, 34, 56) 15px 15px,
-    rgb(28, 34, 57) 16px 16px,
-    rgb(29, 34, 57) 17px 17px,
-    rgb(29, 34, 57) 18px 18px,
-    rgb(29, 35, 58) 19px 19px,
-    rgb(29, 35, 58) 20px 20px,
-    rgb(29, 35, 58) 21px 21px,
-    rgb(29, 35, 59) 22px 22px,
-    rgb(30, 35, 59) 23px 23px,
-    rgb(30, 36, 59) 24px 24px,
-    rgb(30, 36, 60) 25px 25px,
-    rgb(30, 36, 60) 26px 26px,
-    rgb(30, 36, 60) 27px 27px,
-    rgb(31, 37, 61) 28px 28px;
 
 }
 
@@ -395,4 +295,18 @@ ul.guessBox li {
 	width: 95%;
 	margin: 0.2em;
 	color: #fff;
+}
+
+@media only screen and (max-device-width: 700px) {
+	body {
+		margin: 1.9em auto;
+	}
+
+	.content{
+		width: 100%;
+	}
+
+	.game {
+		width: 100%;
+	}
 }
