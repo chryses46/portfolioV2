@@ -8,7 +8,7 @@
             <li id="home" ng-click="menuClick();"><a href="#/home" title="Home"><i class="fa fa-home"></i></a></li>
             <li id="projects" ng-click="showList();"><a title="Projects" id="proj"><i class="fa fa-edit"></i></a>
                 <ul class="projects">
-                    <li ng-click="collapse();" ng-repeat="link in projects"><a href="{{link.href}}">{{link.title}}</a></li>
+                    <li ng-click="collapse();" ng-repeat="link in projects"><a ng-href="{{link.href}}" target="_blank">{{link.title}}</a></li>
                 </ul>
             </li>
             <li id="mail" ng-click="menuClick();"><a href="mailto:danjfrank08@gmail.com" title="Contact Me"><i class="fa fa-envelope"></i></a></li>

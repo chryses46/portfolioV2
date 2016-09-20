@@ -119,6 +119,12 @@ hr {
     background-repeat: no-repeat;
 }
 
+.view.amelia {
+    background: url('../img/amelia-artist.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .view.about {
     background: url('../img/aboutme.jpg');
     background-size: contain;
