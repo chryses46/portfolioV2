@@ -3,6 +3,8 @@ angular.module('portfolio')
         $scope.projects = [
             {   title: "iuzeit Inc.",
                 href: "http://beta.iuzeit.com"},
+            {   title: "Amelia | Artist",
+                href: "http://www.amelia-artist.com"},
             {   title: "About Me",
                 href: "#/about"},
             {   title: "Ryu jQuery Page",
