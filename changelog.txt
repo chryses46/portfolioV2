@@ -3,7 +3,8 @@
 +Integrated Amelia-Artist.com to site (domain name expired)
 +Updated content
 +Updated site navigation behavior
-
++Re-designed About Me
++Updated content on About Me
 
 8/10/2016
 ==========

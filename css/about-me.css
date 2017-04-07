@@ -1,6 +1,6 @@
 .masthead {
   /* Layout Delcarations */
-  padding: 4em 0;
+  padding: 1em 0;
   width: 100%;
   background-image: url("../img/background_geo.jpg");
   background-size: 100% 100%;
@@ -8,25 +8,23 @@
   font-size: 40px;
 }
 
-.masthead-intro {
-  /* Layout Delcarations */
-  margin-bottom: 0.1em;
-  margin-right: 12em;
-  text-align: right;
-  /* Type Declarations */
-  font-family: "Gloria Hallelujah", sans-serif;
-  font-weight: bold;
-  color: #cc5200;
-}
-
 .masthead-heading {
   /* Layout Delcarations */
-  margin-top: -0.2em;
-  text-align: right;
+  text-align: center;
   /* Type Declarations */
   font-family: "Russo One", sans-serif;
   font-size: 90px;
-  color: #e65c00;
+  color: #ffffff;
+}
+
+.masthead-intro {
+  /* Layout Delcarations */
+  margin-bottom: 0.1em;
+  text-align: center;
+  /* Type Declarations */
+  font-family: "Gloria Hallelujah", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .interesting > p,
@@ -112,15 +110,11 @@ ul {
 @media only screen and (max-width: 700px) {
   .masthead-heading {
     font-size: 1em;
-    color: #e65c00;
+    color: #ffffff;
   }
   .masthead-intro {
-    color: #cc5200;
+    color: #ffffff;
     font-size: .5em;
-    margin-right: 10em;
-  }
-  .masthead {
-    padding: 2em 0;
   }
   .row p{
     padding: 1em;
