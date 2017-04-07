@@ -6,6 +6,7 @@
 +Re-designed and updated content on About Me
 +Fixed page titles so they are specific to the page they're on
 +Removed clutter and old files
++Update WordPress site and images for links.
 
 8/10/2016
 ==========
