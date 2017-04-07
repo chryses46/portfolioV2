@@ -26,8 +26,8 @@ body {
 
 #fname {
     position: relative;
-    -webkit-animation: rightSlide 2s; 
-    animation: rightSlide 2s; 
+    -webkit-animation: rightSlide 2s;
+    animation: rightSlide 2s;
 }
 
 #lname {
