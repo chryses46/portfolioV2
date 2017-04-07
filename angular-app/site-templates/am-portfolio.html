@@ -1,0 +1,50 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Rakkas|Shrikhand|Yatra+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/am-reset.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" id="cssId" href="css/am-style.css">
+</head>
+<section class="title" id="home">
+    <h1><a href="#/amelia-artist" class="title-amelia">Amelia</a></h1>
+    <h2 class="title-port">Model Portfolio </h2>
+    <i class="fa fa-lightbulb-o" ng-click="changeStyle();"/>
+    <div>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/abigail_ladona/" target="_blank"><i class="fa fa-instagram" /></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/Abigail.Ladona/" target="_blank"><i class="fa fa-facebook" /></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/AbbyGirl96" target="_blank"><i class="fa fa-twitter" /></a>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="full-port">
+    <div class="photo-slider">
+        <i class="fa fa-arrow-left" ng-click="prevSlide();" />
+        <div class="img-hold" ng-swipe-left="prevSlide();" ng-swipe-right="nextSlide();">
+            <img class="port-img" ng-repeat="img in portImages" ng-src="{{img.loc}}" title="Photographer: {{img.photog}}" ng-hide="!isCurrentSlideIndex($index)" />
+        </div>
+        <i class="fa fa-arrow-right" ng-click="nextSlide();" />
+    </div>
+    <div class="img-cap">
+        <p ng-repeat="img in portImages" ng-hide="!isCurrentSlideIndex($index)">Photographer: {{img.photog}}</p>
+    </div>
+    <div>
+        <!-- Compelted once images are chosen
+        <section class="port-container container-fluid">
+            <div class="row">
+                <div class="col-xs-4" ng-repeat="img in portImages">
+                    <div class="img-hold">
+                        <img class="port-img"  src="{{img.loc}}" title="Photographer: {{img.photog}}" ng-click="setCurrentSlideIndex($index)"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    -->
+    </div>
+</section>

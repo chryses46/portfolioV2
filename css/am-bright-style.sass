@@ -1,0 +1,339 @@
+/*Sassy SCSS*/
+
+/*Generic Styles*/
+$Rakkas: Rakkas, cursive
+$Shrikhand: Shrikhand, cursive
+$YatraOne: Yatra One, cursive
+$title-font: 25pt
+$icon-font: 23pt
+
+=social-a
+  text-decoration: none
+  color: inherit
+
+=social-visited
+  color: inherit
+
+=light-bulb
+  float: right
+  height: 1em
+  width: 1em
+  position: absolute
+  top: 0
+  right: 0
+  margin: 1em .5em 0 0
+  font-size: 20pt
+  &:hover
+    cursor: pointer
+
+=slider-arrow
+  z-index: 1003
+  align-self: center
+  color: #000
+  font-size: 16pt
+  &:hover
+    cursor: pointer
+
+
+=head-div
+  text-align: center
+  display: flex
+  justify-content: center
+  @media screen and (min-width: 780px)
+    width: 100%
+
+=head-i
+  font-size: 29pt
+  line-height: 1em
+  color: #234567
+
+=head-h1
+  position: relative
+  right: -12%
+  font-family: $Shrikhand
+  font-size: 29pt
+  color: #234567
+  @media screen and (min-width: 780px)
+    right: 0
+
+=blog-title
+  font-family: $Rakkas
+  color: #000
+
+=blog-entry
+  text-align: justify
+  text-indent: 2em
+  margin: 0 auto
+  padding: 0 34px
+  color: #000
+  font-size: 12pt
+
+h1, ul
+  margin: 0 auto
+
+a
+  text-decoration: none
+  color: #000
+
+  &:visited
+    text-decoration: none
+    color: #000
+
+/*Home page styles*/
+body
+  background-color: #efecec
+  min-height: 100%
+
+
+  .title
+    width: 100%
+    background-color: #fff
+    text-align: center
+    padding-top: 2em
+
+    h1
+      .title-amelia
+        font-family: $Rakkas !important
+        font-size: 62pt!important
+        color: #234567 !important
+
+    h2
+      font-size: 25pt
+      margin: 0 auto 2px auto
+      font-family: $Rakkas
+      color: #000
+
+    .title-port
+      font-size: 25pt
+      margin: 0 auto 2px auto
+      font-family: $Rakkas
+      color: #000
+
+    h3
+      font-size: 12px
+      margin: 0 auto 10px auto
+      font-family: $Rakkas
+      color: #000
+
+    ul
+      li
+        list-style: none
+        display: inline-block
+        font-size: $icon-font
+        color: #b22222
+
+      li:nth-child(2)
+        margin: 0 1em
+
+      a
+        +social-a
+
+        &:visited
+          +social-visited
+
+    a
+      text-decoration: none
+      color: #000
+
+      &:visited
+        text-decoration: none
+        color: #000
+
+    .fa-lightbulb-o
+      +light-bulb
+      color: #4e4747
+
+  .full-port
+    width: 100%
+
+    .photo-slider
+      width: 100%
+      height: 36em
+      display: flex
+      justify-content: center
+      margin: .5em auto
+
+      @media screen and (min-width: 453px)
+        height: 59em
+
+      @media screen and (max-width: 453px) and (orientation: landscape)
+        height: 26em
+
+      @media screen and (min-width: 453px) and (orientation: landscape)
+        height: 25em
+
+      @media screen and (min-width: 768px) and (orientation: landscape)
+        height: 40em
+
+      .fa-arrow-left
+        float: left
+        +slider-arrow
+
+      .fa-arrow-right
+        float: right
+        +slider-arrow
+
+      .img-cap
+        position: relative
+        width: 100%
+        color: #000
+
+      .img-hold
+        margin: .5em auto
+        width: 100%
+        justify-content: center
+        display: flex
+        align-items: center
+
+        .port-img
+          max-width: 100%
+          max-height: 100%
+          object-fit: contain
+
+      .slide-nav
+        text-align: center
+        display: block
+        position: absolute
+        z-index: 1002
+        bottom: 195px
+        height: 13px
+
+        .dots-wrap
+          margin: 0 auto
+          width: 100%
+
+          ul
+            margin: 0
+            width: 100%
+
+            .dot
+              position: relative
+              margin: 0 8px
+              width: 12px
+              height: 12px
+              display: inline
+
+              a
+                position: absolute
+                width: 6px
+                height: 6px
+                text-indent: 100%
+                white-space: nowrap
+                overflow: hidden
+                background: #FFF
+                border: 1px solid transparent
+                outline: none
+                -webkit-box-shadow: none
+                -moz-box-shadow: none
+                box-shadow: none
+                -webkit-border-radius: 50%
+                -moz-border-radius: 50%
+                border-radius: 50%
+                -webkit-transition: background-color 0.25s, border-color 0.25s
+                -moz-transition: background-color 0.25s, border-color 0.25s
+                transition: background-color 0.25s, border-color 0.25s
+    .img-cap
+      width: 100%
+      color: #000
+      text-align: right
+      padding: 0 3em 0 3em
+
+    .port-container
+
+      .img-hold
+        margin: .5em auto
+        width: 100%
+        display: flex
+        align-content: center
+
+        .port-img
+          border-radius: 3em
+          max-width: 100%
+          max-height: 100%
+          align-self: center
+          object-fit: contain
+  .port
+    .port-head
+      background-color: #e0e0eb
+
+      div
+        +head-div
+
+        @media screen and (min-width: 780px)
+          width: 100%
+
+        h1
+          +head-h1
+
+      .arrow-holder
+        i
+          +head-i
+
+        @media screen and (min-width: 780px)
+          display: none
+
+    .port-img-block
+      background-color: #fff
+
+      .img-hold
+        padding:  .5em .25em .5em .25em
+
+        .port-img
+          border-radius: 3em
+          max-width: 100%
+          max-height: 100%
+
+
+  .blog
+    .blog-head
+      background-color: #e0e0eb
+
+      div
+        +head-div
+
+        h1
+          +head-h1
+
+      .arrow-holder
+        i
+          +head-i
+
+        @media screen and (min-width: 780px)
+          display: none
+
+    .blog-block
+      background-color: #fff
+      text-align: center
+      min-height: 4em
+
+      .blog-title
+        +blog-title
+
+      .blog-date
+        font-style: italic
+        margin: -7px auto 10px auto
+        color: #000
+
+      .blog-entry
+        +blog-entry
+
+  .foot
+    text-align: center
+    background-color: #e0e0eb
+
+    li
+      list-style: none
+      font-size: 22px
+      display: inline
+      color: #b22222
+
+      &:nth-child(2)
+        padding: 0 20px
+    a
+      +social-a
+
+      &:visited
+        +social-visited
+    p
+      padding: 0 0 10px 0
+      margin: 0 auto

@@ -1,3 +1,10 @@
+4/7/2017
+==========
++Integrated Amelia-Artist.com to site (domain name expired)
++Updated content
++Updated site navigation behavior
+
+
 8/10/2016
 ==========
 +Completed Angular.JS implementation
@@ -30,11 +37,10 @@
 
 3/5/2016
 ==========
-+Fixed "The Shopping List" functionality in the Fire Fox web browser. 
++Fixed "The Shopping List" functionality in the Fire Fox web browser.
 
 3/4/2016
 ==========
 +Repaired responsiveness for mobile.
-+Fixed additional formatting issues all around. 
++Fixed additional formatting issues all around.
 +Added additional styling
-

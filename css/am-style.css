@@ -1,0 +1,269 @@
+/*Sassy SCSS */
+/*Generic Styles */
+h1, ul {
+  margin: 0 auto; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+  a:visited {
+    text-decoration: none;
+    color: #000; }
+
+/*Home page styles */
+body {
+  background-color: #000;
+  min-height: 100%; }
+  body .title {
+    width: 100%;
+    background-color: #4e4747;
+    text-align: center;
+    padding-top: 2em; }
+    body .title h1 .title-amelia {
+      font-family: Rakkas, cursive !important;
+      font-size: 62pt !important;
+      color: #234567 !important; }
+    body .title h2 {
+      font-size: 25pt;
+      margin: 0 auto 2px auto;
+      font-family: Rakkas, cursive;
+      color: #000; }
+    body .title .title-port {
+      font-size: 25pt;
+      margin: 0 auto 2px auto;
+      font-family: Rakkas, cursive;
+      color: #000; }
+    body .title h3 {
+      font-size: 12px;
+      margin: 0 auto 10px auto;
+      font-family: Rakkas, cursive;
+      color: #000; }
+    body .title ul li {
+      list-style: none;
+      display: inline-block;
+      font-size: 23pt;
+      color: #b22222; }
+    body .title ul li:nth-child(2) {
+      margin: 0 1em; }
+    body .title ul a {
+      text-decoration: none;
+      color: inherit; }
+      body .title ul a:visited {
+        color: inherit; }
+    body .title a {
+      text-decoration: none;
+      color: #000; }
+      body .title a:visited {
+        text-decoration: none;
+        color: #000; }
+    body .title .fa-lightbulb-o {
+      float: right;
+      height: 1em;
+      width: 1em;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 1em 0.5em 0 0;
+      font-size: 20pt;
+      color: #fff; }
+      body .title .fa-lightbulb-o:hover {
+        cursor: pointer; }
+  body .full-port {
+    width: 100%; }
+    body .full-port .photo-slider {
+      width: 100%;
+      height: 36em;
+      display: flex;
+      justify-content: center;
+      margin: 0.5em auto; }
+      @media screen and (min-width: 453px) {
+        body .full-port .photo-slider {
+          height: 59em; } }
+      @media screen and (max-width: 453px) and (orientation: landscape) {
+        body .full-port .photo-slider {
+          height: 26em; } }
+      @media screen and (min-width: 453px) and (orientation: landscape) {
+        body .full-port .photo-slider {
+          height: 25em; } }
+      @media screen and (min-width: 768px) and (orientation: landscape) {
+        body .full-port .photo-slider {
+          height: 40em; } }
+      body .full-port .photo-slider .fa-arrow-left {
+        float: left;
+        z-index: 1003;
+        align-self: center;
+        color: #fff;
+        font-size: 16pt; }
+        body .full-port .photo-slider .fa-arrow-left:hover {
+          cursor: pointer; }
+      body .full-port .photo-slider .fa-arrow-right {
+        float: right;
+        z-index: 1003;
+        align-self: center;
+        color: #fff;
+        font-size: 16pt; }
+        body .full-port .photo-slider .fa-arrow-right:hover {
+          cursor: pointer; }
+      body .full-port .photo-slider .img-hold {
+        margin: 0.5em auto;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        align-items: center; }
+        body .full-port .photo-slider .img-hold .port-img {
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: contain; }
+      body .full-port .photo-slider .slide-nav {
+        text-align: center;
+        display: block;
+        position: absolute;
+        z-index: 1002;
+        bottom: 195px;
+        height: 13px; }
+        body .full-port .photo-slider .slide-nav .dots-wrap {
+          margin: 0 auto;
+          width: 100%; }
+          body .full-port .photo-slider .slide-nav .dots-wrap ul {
+            margin: 0;
+            width: 100%; }
+            body .full-port .photo-slider .slide-nav .dots-wrap ul .dot {
+              position: relative;
+              margin: 0 8px;
+              width: 12px;
+              height: 12px;
+              display: inline; }
+              body .full-port .photo-slider .slide-nav .dots-wrap ul .dot a {
+                position: absolute;
+                width: 6px;
+                height: 6px;
+                text-indent: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                background: #FFF;
+                border: 1px solid transparent;
+                outline: none;
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                box-shadow: none;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                border-radius: 50%;
+                -webkit-transition: background-color 0.25s, border-color 0.25s;
+                -moz-transition: background-color 0.25s, border-color 0.25s;
+                transition: background-color 0.25s, border-color 0.25s; }
+    body .full-port .img-cap {
+      width: 100%;
+      color: #fff;
+      text-align: right;
+      padding: 0 3em 0 3em; }
+    body .full-port .port-container .img-hold {
+      margin: 0.5em auto;
+      width: 100%;
+      display: flex;
+      align-content: center; }
+      body .full-port .port-container .img-hold .port-img {
+        border-radius: 3em;
+        max-width: 100%;
+        max-height: 100%;
+        align-self: center;
+        object-fit: contain; }
+  body .port .port-head {
+    background-color: #767577; }
+    body .port .port-head div {
+      text-align: center;
+      display: flex;
+      justify-content: center; }
+      @media screen and (min-width: 780px) {
+        body .port .port-head div {
+          width: 100%; } }
+      @media screen and (min-width: 780px) {
+        body .port .port-head div {
+          width: 100%; } }
+      body .port .port-head div h1 {
+        position: relative;
+        right: -12%;
+        font-family: Shrikhand, cursive;
+        font-size: 29pt;
+        color: #234567; }
+        @media screen and (min-width: 780px) {
+          body .port .port-head div h1 {
+            right: 0; } }
+    body .port .port-head .arrow-holder i {
+      font-size: 29pt;
+      line-height: 1em;
+      color: #000; }
+    @media screen and (min-width: 780px) {
+      body .port .port-head .arrow-holder {
+        display: none; } }
+  body .port .port-img-block {
+    background-color: #4e4747; }
+    body .port .port-img-block .img-hold {
+      padding: 0.5em 0.25em 0.5em 0.25em; }
+      body .port .port-img-block .img-hold .port-img {
+        border-radius: 3em;
+        max-width: 100%;
+        max-height: 100%; }
+  body .blog .blog-head {
+    background-color: #767577; }
+    body .blog .blog-head div {
+      text-align: center;
+      display: flex;
+      justify-content: center; }
+      @media screen and (min-width: 780px) {
+        body .blog .blog-head div {
+          width: 100%; } }
+      body .blog .blog-head div h1 {
+        position: relative;
+        right: -12%;
+        font-family: Shrikhand, cursive;
+        font-size: 29pt;
+        color: #234567; }
+        @media screen and (min-width: 780px) {
+          body .blog .blog-head div h1 {
+            right: 0; } }
+    body .blog .blog-head .arrow-holder i {
+      font-size: 29pt;
+      line-height: 1em;
+      color: #000; }
+    @media screen and (min-width: 780px) {
+      body .blog .blog-head .arrow-holder {
+        display: none; } }
+  body .blog .blog-block {
+    background-color: #4e4747;
+    text-align: center;
+    min-height: 4em; }
+    body .blog .blog-block .blog-title {
+      font-family: Rakkas, cursive;
+      color: #000; }
+    body .blog .blog-block .blog-date {
+      font-style: italic;
+      margin: -7px auto 10px auto;
+      color: #000; }
+    body .blog .blog-block .blog-entry {
+      text-align: justify;
+      text-indent: 2em;
+      margin: 0 auto;
+      padding: 0 34px;
+      color: #000;
+      font-size: 12pt; }
+  body .foot {
+    text-align: center;
+    background-color: #767577; }
+    body .foot li {
+      list-style: none;
+      font-size: 22px;
+      display: inline;
+      color: #b22222; }
+      body .foot li:nth-child(2) {
+        padding: 0 20px; }
+    body .foot a {
+      text-decoration: none;
+      color: inherit; }
+      body .foot a:visited {
+        color: inherit; }
+    body .foot p {
+      padding: 0 0 10px 0;
+      margin: 0 auto; }
+
+/*# sourceMappingURL=am-style.css.map */

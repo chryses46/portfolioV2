@@ -1,0 +1,95 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Rakkas|Shrikhand|Yatra+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/am-reset.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" id="cssId" href="css/am-style.css">
+</head>
+<body>
+  <div>
+      <section class="title" id="home">
+          <h1><a href="#/amelia-artist" class="title-amelia">Amelia</a></h1>
+          <h2><a href="#/am-port">Model</a> | Actor | Singer</h2>
+          <i class="fa fa-lightbulb-o" ng-click="changeStyle();" />
+          <div>
+              <ul>
+                  <li>
+                      <a href="https://www.instagram.com/_abigail.frank_/" target="_blank"><i class="fa fa-instagram" /></a>
+                  </li>
+                  <li>
+                      <a href="https://www.facebook.com/Abigail.Ladona/" target="_blank"><i class="fa fa-facebook" /></a>
+                  </li>
+                  <li>
+                      <a href="https://twitter.com/AbbyGirl96" target="_blank"><i class="fa fa-twitter" /></a>
+                  </li>
+              </ul>
+          </div>
+      </section>
+      <section class="port container-fluid">
+          <header class="port-head row" id="portHead">
+              <a href="#/am-port">
+                  <div class="col-xs-10">
+                      <h1>Portfolio</h1></div>
+              </a>
+              <div class="col-xs-2 arrow-holder" title="Go to top"><i class="fa fa-arrow-circle-up" ng-click="goToTop();" /></div>
+          </header>
+          <section id="portBlock">
+              <div class="port-img-block row">
+                  <div class="col-xs-4 img-hold"><img class="port-img" src="{{portImages[0].loc}}" title="Photographer: {{portImages[0].photog}}" ng-click="portNav(0);" /></div>
+                  <div class="col-xs-4 img-hold"><img class="port-img" src="{{portImages[1].loc}}" title="Photographer: {{portImages[1].photog}}" ng-click="portNav(1);" /></div>
+                  <div class="col-xs-4">
+                      <div class="row">
+                          <div class="col-xs-12 img-hold">
+                              <img class="port-img" src="{{portImages[2].loc}}" title="Photographer: {{portImages[2].photog}}" ng-click="portNav(2);" />
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-xs-12 img-hold">
+                              <img class="port-img" src="{{portImages[3].loc}}" title="Photographer: {{portImages[3].photog}}" ng-click="portNav(3);" />
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="port-img-block row">
+                  <div class="col-xs-4">
+                      <div class="row">
+                          <div class="col-xs-12 img-hold">
+                              <img class="port-img" src="{{portImages[4].loc}}" title="Photographer: {{portImages[4].photog}}" ng-click="portNav(4);" />
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-xs-12 img-hold">
+                              <img class="port-img" src="{{portImages[5].loc}}" title="Photographer: {{portImages[5].photog}}" ng-click="portNav(5);" />
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xs-4 img-hold"><img class="port-img" src="{{portImages[6].loc}}" title="Photographer: {{portImages[6].photog}}" ng-click="portNav(6);" /></div>
+                  <div class="col-xs-4 img-hold"><img class="port-img" src="{{portImages[7].loc}}" title="Photographer: {{portImages[7].photog}}" ng-click="portNav(7);" /></div>
+              </div>
+          </section>
+      </section>
+      <section class="blog container-fluid">
+          <header class="blog-head row" id="blogHead">
+              <div class="col-xs-10">
+                  <h1>Blog</h1></div>
+              <div class="col-xs-2 arrow-holder"><i class="fa fa-arrow-circle-up" ng-click="goToTop();" /></div>
+          </header>
+          <section class="blog-block row" id="blogBlock">
+              <h1 class="blog-title"> Publication!</h1>
+              <p class="blog-date">Posted: 9/2/2016</p>
+              <p class="blog-entry">I'm very excited and proud to announce that I have been published in the August/ September issue of <a href="http://imagesmagazine.net/aug-sept-2016/">Images Magazine</a>! Take a look at the amazing work that Logan Grey did on the featured shoots!</p>
+              <div class="col-xs-12 insta-feed">
+              </div>
+              <div class="col-xs-12 fb-feed">
+              </div>
+              <div class="col-xs-12 twitter-feed">
+              </div>
+              <div class="col-xs-12 entry">
+              </div>
+          </section>
+      </section>
+  </div>
+
+</body>
+
+</html>

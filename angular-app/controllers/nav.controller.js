@@ -2,19 +2,26 @@ angular.module('portfolio')
     .controller('NavController', function($scope, $location) {
         $scope.projects = [
             {   title: "iuzeit Inc.",
-                href: "http://beta.iuzeit.com"},
+                href: "http://www.iuzeit.com",
+                target: "_blank"},
             {   title: "Amelia | Artist",
-                href: "http://www.amelia-artist.com"},
+                href: "#/amelia-artist",
+                target: "_self"},
             {   title: "About Me",
-                href: "#/about"},
+                href: "#/about",
+                target: "_self"},
             {   title: "Ryu jQuery Page",
-                href: "#/ryu"},
+                href: "#/ryu",
+                target: "_self"},
             {   title: "Shopping List",
-                href: "#/shop"},
+                href: "#/shop",
+                target: "_self"},
             {   title: "Hot or Cold",
-                href: "#/hotcold"},
+                href: "#/hotcold",
+                target: "_self"},
             {   title: "My WordPress",
-                href: "http://danielfrank.info/wordpress"}]
+                href: "http://danielfrank.info/wordpress",
+                target: "_blank"}]
 
         $scope.showNav = function() {
             if ($('#headnavbutton').hasClass("down")) {
