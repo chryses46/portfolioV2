@@ -1,10 +1,11 @@
 4/7/2017
 ==========
-+Integrated Amelia-Artist.com to site (domain name expired)
++Integrated Amelia-Artist.com site (domain name expired)
 +Updated content
 +Updated site navigation behavior
-+Re-designed About Me
-+Updated content on About Me
++Re-designed and updated content on About Me
++Fixed page titles so they are specific to the page they're on
++Removed clutter and old files
 
 8/10/2016
 ==========
