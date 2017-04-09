@@ -4,8 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width"/>
-    <link rel="icon" href="img/icon.png">
+    <link rel="icon" href="img/FB_Share_Image.jpg">
     <title ng-bind="$state.current.params.title"></title>
+    <!-- Facebook Share Meta -->
+    <meta property="og:url" content="http://www.danielfrank.info" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="One step closer to  your new website." />
+    <meta property="og:description" content="When you need to make a statement on the web, without making a big one on your bank account."/>
+    <meta property="og:image" content="/img/FB_Share_Image.jpg" />
     <!-- Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -15,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Libraries -->
     <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+    <script src="//connect.facebook.net/en_US/sdk.js"></script>
     <script src="js/angular.min.js"></script>
     <script src="js/angular-ui-router.min.js"></script>
     <script src="js/angular-touch.js"></script>

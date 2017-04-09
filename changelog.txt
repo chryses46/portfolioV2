@@ -1,3 +1,7 @@
+4/9/2017
+==========
++Staging for FaceBook integration.
+
 4/7/2017
 ==========
 +Integrated Amelia-Artist.com site (domain name expired)
