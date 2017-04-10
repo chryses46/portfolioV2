@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width"/>
-    <link rel="icon" href="img/FB_Share_Image.jpg">
+    <link rel="icon" href="img/icon.png">
     <title ng-bind="$state.current.params.title"></title>
     <!-- Facebook Share Meta -->
     <meta property="og:url" content="http://www.danielfrank.info" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="One step closer to  your new website." />
-    <meta property="og:description" content="When you need to make a statement on the web, without making a big one on your bank account."/>
+    <meta property="og:description" content="When you need to make a statement on the web, without making a big one on your bank account." />
     <meta property="og:image" content="http://danielfrank.info/img/FB_Share_Image.jpg" />
+    <meta property="fb:app_id" content="144574756073654" />
     <!-- Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -37,7 +38,33 @@
 <header nav></header>
 
 <body>
-    <div ui-view></div>
+<!-- Load FB SDK -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '144574756073654',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v2.8',
+      display    : 'popup'
+    });
+    FB.AppEvents.logPageView();
+  };
+  FB.ui(
+        {
+            method: 'share',
+            href: 'danielfrank.info'
+        }, function(response){});
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=144574756073654";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+<div ui-view></div>
 </body>
 <footer footer></footer>
 

@@ -9,6 +9,7 @@
 	background: -webkit-linear-gradient( top, rgba(205, 205, 205, 0), rgba(200, 200, 200, .9));
 	background: -moz-linear-gradient( top, rgba(205, 205, 205, 0), rgba(200, 200, 200, .9));
 	background: -o-linear-gradient( top, rgba(205, 205, 205, 0), rgba(200, 200, 200, .9));
+	background: -ms-linear-gradient( top, rgba(205, 205, 205, 0), rgba(200, 200, 200, .9));
 }
 
 #headnavbutton{

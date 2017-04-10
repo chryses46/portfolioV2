@@ -1,3 +1,8 @@
+4/10/2017
+==========
++Added a Like and Share button for Facebook.
++Fixed nav bar gradient on I.E.
+
 4/9/2017
 ==========
 +Staging for FaceBook integration.

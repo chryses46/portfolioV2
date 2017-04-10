@@ -107,14 +107,4 @@
             templateUrl: 'angular-app/attr-templates/wordpress.html'
         }
     })
-
-    $window.fbAsyncInit = function() {
-    FB.init({ 
-      appId: '{144574756073654}',
-      status: true, 
-      cookie: true, 
-      xfbml: true,
-      version: 'v2.4'
-    });
-};
 })();
