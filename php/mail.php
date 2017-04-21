@@ -1,27 +1,18 @@
 <?php
 $nameErr = $emailErr = $messageErr = " ";
-$name = $email = $phone = $service = $message = " ";
-$name = validate_data($_POST["name"]);
+$name = $_POST["name"];
 $email = $_POST["email"];
   if(filter_var($email, FILTER_VALIDATE_EMAIL)){
     $emailErr = "Email format is invalid.";
 }
-$message = validate_data($_POST['message']);
-$phone = validate_data($_POST['phone']);
+$phone = $_POST['phone'];
 $service = $_POST['service'];
-$message = validate_data($_POST['message']);
+$message = $_POST['message'];
 
 
-function validate_data($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
-
-  $formcontent="From: $name \n Phone Number: $phone \n Interested in: $service \n Message: $message";
+  $formcontent="From: $name \n Email Address: $email \n Phone Number: $phone \n Interested in: $service \n Message: $message";
   $recipient = "danjfrank08@gmail.com";
-  $subject = "DanielFrank.info Contact";
+  $subject = "DanielFrank.info Contact Submission";
   $mailheader = "From: $email \r\n";
 mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
 
