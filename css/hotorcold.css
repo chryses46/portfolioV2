@@ -46,7 +46,7 @@ a {
 	color: black;
 }
 
-ul li {	
+ul li {
 	display: inline;
 }
 
@@ -58,16 +58,17 @@ ul li {
 	position: relative;
 	height: 10%;
 	padding: 1em;
+  margin: 7em auto 0 auto;
 }
 
-.what,
+.h-what,
 .new{
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 1.2em;
 }
 
-.what {
+.h-what {
 	float: left;
 }
 
@@ -87,7 +88,7 @@ h1 {
 
 }
 
-.what,
+.h-what,
 .new:hover {
 	cursor: pointer;
 }
@@ -95,7 +96,6 @@ h1 {
 /*style for hidden modal*/
 .overlay {
 	width: 100%;
-	height: 100%;
 	color: #fff;
 	background: #e74c3c;
 	position: absolute;
@@ -151,7 +151,7 @@ h1 {
 
 .content > div ul li {
 	padding: 5px 0;
-	display: block;	
+	display: block;
 	list-style-type: disc;
 	line-height: 1.5em;
 }
@@ -162,12 +162,15 @@ h1 {
 
 .content > div a {
 	font-size: 0.8em;
-	background: #1F253D;
-	color: #95a5a6;
+	background: #000;
+	color: #fff;
 	padding: 0.5em 2em;
 	margin-bottom: 50px;
 	border-radius: 3px;
+  opacity: 1;
 }
+
+
 
 /*---------------------------------------------------------------------------------
    Game Section Styles
@@ -186,7 +189,7 @@ h1 {
 }
 
 h2 {
-	margin: 0 auto;	
+	margin: 0 auto;
 	background: #cc324b;
 	padding: 1em 0.4em;
 	font-size: 1.5em;
@@ -266,11 +269,11 @@ input:focus {
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: #95a5a6; 
+   color: #95a5a6;
 }
 
-:-ms-input-placeholder {  
-   color: #95a5a6; 
+:-ms-input-placeholder {
+   color: #95a5a6;
 }
 
 ul.guessBox {

@@ -1,3 +1,13 @@
+4/21/2017
+==========
++Complete re-design
+  +New nav bar
+  +New Site layout
+  +New page design
+  +Better responsiveness
++Contact Me page live (beta)
++Removed Like and Share for Facebook for the time being (caching issues).
+
 4/10/2017
 ==========
 +Added a Like and Share button for Facebook.

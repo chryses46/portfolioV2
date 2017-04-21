@@ -1,5 +1,6 @@
 .masthead {
   /* Layout Delcarations */
+  margin-top: 7em;
   padding: 1em 0;
   width: 100%;
   background-image: url("../img/background_geo.jpg");
@@ -97,6 +98,7 @@ ul {
 
 .row  {
   width: 100%;
+  margin-top: 7em;
 }
 
 .fa-github {

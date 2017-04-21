@@ -266,4 +266,28 @@ body {
       padding: 0 0 10px 0;
       margin: 0 auto; }
 
+.footer {
+  margin: 0 auto;
+  height: 5em;
+  width: 50%;
+  text-align: center;
+  color: #ffffff; }
+  .footer a {
+    color: #ffffff; }
+  .footer ul {
+    padding: 0; }
+    .footer ul li {
+      list-style: none;
+      display: inline;
+      margin: 0 1em 0 1em; }
+      .footer ul li a {
+        color: #ffffff; }
+
+@media only screen and (max-width: 700px) {
+  .footer {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-size: 15px; } }
+
 /*# sourceMappingURL=am-style.css.map */

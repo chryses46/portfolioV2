@@ -1,0 +1,115 @@
+
+.navcontainer{
+	position: fixed !important;
+	top: 0 !important;
+	width: 100% !important;
+	height: 4.5em !important;
+	z-index: 9999998 !important;
+	left: 0 !important;
+	text-align: center !important;
+	background-color: #ffffff !important;
+}
+.sitename{
+	display: inline-block;
+}
+#headnavbutton{
+	margin: 0 auto;
+	position: absolute;
+	top: 0.5em;
+	right: 1.5em;
+	font-size: 1.5em !important;
+}
+
+#headnavbutton:hover {
+	cursor: pointer;
+}
+
+.navsocial{
+  margin: 5em auto 0 auto;
+  width: 50%;
+  text-align: center;
+}
+.navsocial ul{
+    padding: 0;
+		font-size: 23pt;
+}
+.navsocial ul li{
+      list-style: none;
+      display: inline;
+}
+
+.navsocial ul li:nth-child(2){
+	margin: 0 .5em 0 .5em
+}
+
+#headnav {
+	display: none;
+	position: fixed;
+	top: 4.5em;
+	left: 0;
+	width: 100%;
+	z-index: 999998;
+	text-align: center;
+	background-color: #ffffff !important;
+}
+
+#headnav ul {
+	display: inline-table;
+	margin: 0 auto;
+	padding: 0;
+	font-size: 14pt !important;
+}
+
+#headnav #home,
+#headnav #projects,
+#headnav #li,
+#headnav #fb,
+#headnav #about{
+	display: inline-block;
+	list-style: none;
+	margin: 0 1em;
+	letter-spacing: 1.08em;
+	background-color: #ffffff;
+}
+
+#headnav ul li:hover {
+	cursor: pointer;
+}
+
+#headnav ul li> a{
+	color: inherit;
+}
+
+#headnav #projects > a {
+	color: #ff0000;
+}
+
+
+#headnav .projects {
+	display: none;
+	border-radius: 0 0 1em 1em;
+	position: absolute;
+	top: 100%;
+	background-color: rgb(200, 200, 200) !important;
+	left: 0;
+	width: 100%;
+}
+
+
+.projects > li{
+	display: inline-block;
+	list-style: none;
+	position: relative;
+	z-index: 999998;
+	text-transform: none;
+	margin: 0 .5em;
+}
+
+
+@media only screen and (max-width: 700px){
+	.projects > li {
+	width: 100%;
+	text-align: center;
+	}
+
+}

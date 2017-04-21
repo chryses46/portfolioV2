@@ -9,13 +9,13 @@ body {
 	min-width: 1200px;
 	height: 500px;
 	position: relative;
-	z-index: 1;	
+	z-index: 1;
 }
 
 .ryu {
 	float: left;
-	width: 659px;
-	height: 494px;
+	width: 100%;
+	height: 100%;
 	outline: none;
 }
 
@@ -65,7 +65,7 @@ body {
 	margin: 0 486px;
 	height: 500px;
 	font-size: 20px;
-	
+
 }
 
 .jquery {
