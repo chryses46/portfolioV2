@@ -37,9 +37,10 @@ angular.module('portfolio')
                 $('.projects').hide();
         }
 
-        $scope.menuClick = function() {
+        $scope.menuClick = function(loc) {
             $('#headnav').hide();
             $('#headnavbutton').toggleClass("up");
+            $location.path(loc);
         }
 
         $scope.collapse = function() {

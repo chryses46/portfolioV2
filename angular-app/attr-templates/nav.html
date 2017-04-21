@@ -19,12 +19,12 @@
 
     <nav id="headnav">
       <ul>
-        <li id="home" ng-click="menuClick();"><a href="#/home" title="Home"><i class="fa fa-home"></i>Home</a></li>
-        <li id="projects" ng-click="menuClick();"><a title="Projects" id="proj" href="/#projects"><i class="fa fa-edit"></i>Portfolio</a>
+        <li id="home" ng-click="menuClick('/home');"><a href="/#home" title="Home"><i class="fa fa-home"></i>Home</a></li>
+        <li id="projects" ng-click="menuClick('/projects');"><a href="/#projects" title="Projects" id="proj" href="/#projects"><i class="fa fa-edit"></i>Portfolio</a>
         </li>
-        <li id="about" ng-click="menuClick();"><a href="/#about" title="About Me"><i class="fa fa-question-circle-o"></i>About Me</a></li>
-        <li id="contact" ng-click="menuClick();"><a href="/#contact" title="Contact Me"><i class="fa fa-envelope"></i>Contact Me</a></li>
-        <li id="games" ng-click="menuClick();"><a href="/#games" title="Games"><i class="fa fa-gamepad"></i>Games!</a></li>
+        <li id="about" ng-click="menuClick('/about');"><a href="/#about"title="About Me"><i class="fa fa-question-circle-o"></i>About Me</a></li>
+        <li id="contact" ng-click="menuClick('/contact');"><a href="/#contact" title="Contact Me"><i class="fa fa-envelope"></i>Contact Me</a></li>
+        <li id="games" ng-click="menuClick('/games');"><a href="/#games" title="Games"><i class="fa fa-gamepad"></i>Games!</a></li>
       </ul>
     </nav>
   </div>
