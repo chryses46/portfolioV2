@@ -2,9 +2,21 @@
     'use strict';
     angular
     .module('portfolio', ['ui.router', 'ngTouch','ngAnimate', 'ngDialog', 'smoothScroll'])
-    .run([ '$rootScope', '$state', '$stateParams', function ($rootScope, $state, $stateParams) {
+    .run([ '$rootScope', '$state', '$stateParams', '$location', function ($rootScope, $state, $stateParams, $location) {
       $rootScope.$state = $state;
       $rootScope.$stateParams = $stateParams;
+      $rootScope.$on('$stateChangeSuccess', function(){
+        console.log("The current page is: " + $location.path())
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+        var re = /\/[am]+\-?[port]+[\d]?/;
+        if ($location.path() == re.exec($location.path()) || $location.path() == '/amelia-artist'){
+          $('.navcontainer').hide();
+          $('#hostFoot').show();
+        } else {
+          $('.navcontainer').show();
+          $('#hostFoot').hide();
+        }
+      })
     }])
     .config(function($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise('/home');
@@ -18,6 +30,26 @@
                 url: '/about',
                 templateUrl: 'angular-app/site-templates/about-me-proj.html',
                 params: {title: "Daniel Frank | About Me"}
+            })
+            .state('projects', {
+                url: '/projects',
+                templateUrl: 'angular-app/site-templates/projects.html',
+                params: {title: "Daniel Frank | Portfolio"}
+            })
+            .state('contact', {
+                url: '/contact',
+                templateUrl: 'angular-app/site-templates/contact.php',
+                params: {title: "Daniel Frank | Contact Me"}
+            })
+            .state('mail', {
+                url: '/mail',
+                templateUrl: 'php/mail.php',
+                params: {title: "Daniel Frank | Thank you!"}
+            })
+            .state('games', {
+                url: '/games',
+                templateUrl: 'angular-app/site-templates/games.html',
+                params: {title: "Daniel Frank | Games and Apps"}
             })
             .state('ryu', {
                 url: '/ryu',
@@ -107,4 +139,5 @@
             templateUrl: 'angular-app/attr-templates/wordpress.html'
         }
     })
+
 })();

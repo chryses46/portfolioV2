@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 
 	/*--- Display information modal box ---*/
-  	$('.what').click(function(){
+  	$('.h-what').click(function(){
     	$('.overlay').fadeIn(1000);
   	});
 
@@ -12,10 +12,10 @@ $(document).ready(function() {
   	$('a.close').click(function(){
   		$('.overlay').fadeOut(1000);
   	});
-	
+
 	secretNumber();
 	$('#guessButton').on('click', game );
-	$('.new').on('click', newGame) 
+	$('.new').on('click', newGame)
 
 //Generate a secret number
 function secretNumber(){
@@ -39,7 +39,7 @@ function game(e){
 	}
 
 	var determine = Math.abs(secretNumber - userGuess);
-	
+
 	//Determine how far away the guess is from the secretNumber
 	if  (determine == 0){
 		$('#feedback').html("Winner winner, chicken dinner!");
@@ -53,7 +53,7 @@ function game(e){
 		(determine > 20);
 		$('#feedback').html("Ice cold");
 	}
-	
+
 	//increase the count of "Guess" by one for each wrong answer
 	if (determine != 0) {
 		var guessCount = $('#count').html();
@@ -61,7 +61,7 @@ function game(e){
 		console.log("Count is at " + guessCount + "!");
 		$('#count').html(guessCount);
 		$('<li></li>').appendTo("#guessList").html("<li>" +userGuess+ "</li>");
-	} 
+	}
 }
 
 //resets html for new game
@@ -75,5 +75,3 @@ function newGame (e){
 }
 
 });
-
-

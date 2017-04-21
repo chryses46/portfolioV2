@@ -1,18 +1,31 @@
 <!-- navigation bar-->
+<head>
+  <link rel="stylesheet" type="text/css" href="css/nav.css">
+</head>
 <div ng-controller="NavController">
-    <div class="arrowholder">
-        <div id="headnavbutton" ng-click="showNav();" class="down"></div>
+  <div class="navcontainer">
+    <div class="navhead">
+
+      <h1>
+        <a href="/#home">
+        <span id="fname">Daniel </span>
+        <span id="lname"> Frank</span>
+        </a>
+      </h1>
+        <h2 id="subTitle">Front End Web Developer</h2>
+
     </div>
+    <div id="headnavbutton" ng-click="showNav();"><i class="fa fa-bars" aria-hidden="true"></i></div>
+
     <nav id="headnav">
-        <ul>
-            <li id="home" ng-click="menuClick();"><a href="#/home" title="Home"><i class="fa fa-home"></i></a></li>
-            <li id="projects" ng-click="showList();"><a title="Projects" id="proj"><i class="fa fa-edit"></i></a>
-                <ul class="projects">
-                    <li ng-click="collapse();" ng-repeat="link in projects"><a ng-href="{{link.href}}" target="{{link.target}}">{{link.title}}</a></li>
-                </ul>
-            </li>
-            <li id="mail" ng-click="menuClick();"><a href="mailto:danjfrank08@gmail.com" title="Contact Me"><i class="fa fa-envelope"></i></a></li>
-            <li id="about" ng-click="menuClick();"><a href="/#about" title="About Me"><i class="fa fa-question-circle-o"></i></a></li>
-        </ul>
+      <ul>
+        <li id="home" ng-click="menuClick();"><a href="#/home" title="Home"><i class="fa fa-home"></i>Home</a></li>
+        <li id="projects" ng-click="menuClick();"><a title="Projects" id="proj" href="/#projects"><i class="fa fa-edit"></i>Portfolio</a>
+        </li>
+        <li id="about" ng-click="menuClick();"><a href="/#about" title="About Me"><i class="fa fa-question-circle-o"></i>About Me</a></li>
+        <li id="contact" ng-click="menuClick();"><a href="/#contact" title="Contact Me"><i class="fa fa-envelope"></i>Contact Me</a></li>
+        <li id="games" ng-click="menuClick();"><a href="/#games" title="Games"><i class="fa fa-gamepad"></i>Games!</a></li>
+      </ul>
     </nav>
+  </div>
 </div>

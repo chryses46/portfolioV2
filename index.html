@@ -18,7 +18,6 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=EB+Garamond'>
-    <link rel="stylesheet" type="text/css" href="css/nav.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Libraries -->
     <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
@@ -34,12 +33,13 @@
     <script src="angular-app/app-portfolio.js"></script>
     <script src="angular-app/controllers/nav.controller.js"></script>
     <script src="angular-app/controllers/amelia-artist.controller.js"></script>
+
 </head>
 <header nav></header>
 
 <body>
 <!-- Load FB SDK -->
-<div id="fb-root"></div>
+<!--<div id="fb-root"></div>
 <script>
   window.fbAsyncInit = function() {
     FB.init({
@@ -63,7 +63,7 @@
     js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=144574756073654";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
-</script>
+</script>-->
 <div ui-view></div>
 </body>
 <footer footer></footer>

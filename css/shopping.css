@@ -15,7 +15,7 @@ body {
 .content {
 	text-align: center;
 	background-color: #D3D3D3;
-	margin: 2em auto;
+	margin: 7em auto 0 auto;
 	opacity: 0.7;
 	width: 19em;
 }
@@ -56,6 +56,15 @@ hr {
 .done {
 	text-decoration: line-through;
 	font-style: italic;
+}
+.footer{
+	background-color: #d3d3d3;
+	opacity: .5;
+	height: 6em;
+}
+.footer > ul >li > a{
+	color: #000 !important;
+
 }
 
 @media only screen and (max-device-width: 700px){
