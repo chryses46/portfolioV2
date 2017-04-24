@@ -14,13 +14,12 @@ $headers = 'From: ' . $emailaddy . "\r\n".
 'Reply-To: ' . $emailaddy . "\r\n" .
 'X-Mailer: PHP/' . phpversion();
 $body  = 'From: ' . $name . "\n" .
-'Email: ' . $email . "\n" .
+'Email: ' . $emailaddy . "\n" .
 'Phone: ' . $phone . "\n" .
 'Interested in: ' . $service . "\n" .
 'Message: ' . "\n" . $message;
 
 $success = mail( $mailTo, $subject, $body, $headers );
-mail( $mailTo, $subject, $body, $headers );
 if ( $success ) {
     $response[ 'success' ] = true;
 }
