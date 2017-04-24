@@ -94,7 +94,8 @@ hr {
   width: 50%;
   text-align: justify;
   text-indent: 2.5em;
-  letter-spacing: 0.02em; }
+  letter-spacing: 0.02em;
+  text-align: center; }
   .contact-intro h1 {
     text-align: center;
     letter-spacing: 0;

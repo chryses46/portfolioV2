@@ -1,0 +1,32 @@
+<section ng-controller="contactController">
+<section id="contactIntro" class="contact-intro" >
+  <h1>Contact Me</h1>
+  <p>Please feel free to contact me for more information or a quote on what I can do for you!</p>
+</section>
+<form method="post" name="form" role="form" class="contact-form" ng-submit="form.$valid && contactForm(input)" validate>
+ <section id="contactDetails">
+  <p>Name<span>*</span></p><input type="text" id="name" name="name" ng-model="input.name" required>
+  <p>Email<span>*</span></p><input type="email" name="email" id="email" ng-model="input.email" required>
+  <p>Phone</p><input type="tel" name="phone" ng-model="input.phone">
+  <p>Interested In:</p>
+  <select name="service" size="1" ng-model="input.service">
+    <option value="" selected>Select a service</option>
+    <option value="Website Development">Website Development</option>
+    <option value="Website Maintenance">Website Maintenance</option>
+    <option value="Wordpress">Wordpress</option>
+  </select>
+  <p>Message<span>*</span></p><textarea name="message" rows="6" cols="25" ng-model="input.message" required></textarea><br/>
+  <button type="submit" name="submit" value="submit">Submit</button><input class="button" type="reset" value="Clear">
+</section>
+</form>
+<div id="thankYou" class="thank-you" ng-show="success">
+  <h1>Thank You</h1>
+  <br/>
+  <p>I will reach out to you as soon as possible so we can get started working on what you need! Feel free to take a look at the rest of my site! Also, don't forget to like my <a href='https://www.facebook.com/dfwebdev' target='_blank'>Facebook Page!</a>
+</div>
+<div id="error" ng-show="error">Something went wrong. Please try again later.</div>
+<ul class="contact-social">
+  <li id="li" ng-click="menuClick();"><a href="https://www.linkedin.com/in/daniel-frank-598b9960" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+  <li id="fb" ng-click="menuClick();"><a href="http://www.facebook.com/dfwebdev" target="_blank"><i class="fa fa-facebook-square" ></i></a></li>
+</ul>
+</section>

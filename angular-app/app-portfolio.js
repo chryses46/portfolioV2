@@ -38,12 +38,14 @@
             })
             .state('contact', {
                 url: '/contact',
-                templateUrl: 'angular-app/site-templates/contact.php',
+                templateUrl: 'angular-app/site-templates/contact.html',
+                controller: 'contactController',
                 params: {title: "Daniel Frank | Contact Me"}
             })
             .state('mail', {
                 url: '/mail',
-                templateUrl: 'php/mail.php',
+                templateUrl: 'angular-app/controllers/mail.php',
+                controller: 'contactController',
                 params: {title: "Daniel Frank | Thank you!"}
             })
             .state('games', {
@@ -139,5 +141,6 @@
             templateUrl: 'angular-app/attr-templates/wordpress.html'
         }
     })
+
 
 })();

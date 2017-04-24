@@ -1,5 +1,5 @@
 angular.module('portfolio')
-    .controller('NavController', function($rootScope,$scope, $location) {
+    .controller('NavController', function($rootScope,$scope,$location) {
         $scope.projects = [
             {   title: "iuzeit Inc.",
                 href: "http://www.iuzeit.com",
