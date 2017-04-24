@@ -19,7 +19,7 @@
             $body .= 'Message: ' . "\n" . $message;
 
             $success = mail( $mailTo, $subject, $body );
-
+            mail( $mailTo, $subject, $body );
             if ( $success ) {
                 $response[ 'success' ] = true;
             }
