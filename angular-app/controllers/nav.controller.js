@@ -21,8 +21,12 @@ angular.module('portfolio')
                 target: "_blank"}]
 
         $scope.showNav = function() {
-            if ($('#headnavbutton').hasClass("down")) {
-                $('#headnavbutton').toggleClass("up");
+            if ($('#nav').hasClass("fa fa-bars")){
+              $('#nav').removeClass("fa fa-bars");
+              $('#nav').addClass("fa fa-times");
+            } else {
+              $('#nav').removeClass("fa fa-times");
+              $('#nav').addClass("fa fa-bars");
             }
 
             if ($('#headnav').prop('style').display == "block") {
@@ -41,6 +45,8 @@ angular.module('portfolio')
             $('#headnav').hide();
             $('#headnavbutton').toggleClass("up");
             $location.path(loc);
+            $('#nav').removeClass("fa fa-times");
+            $('#nav').addClass("fa fa-bars");
         }
 
         $scope.collapse = function() {
@@ -48,4 +54,18 @@ angular.module('portfolio')
             $('#headnav').hide();
             $('#headnavbutton').toggleClass("up");
         };
+
+        $scope.bodyClick = function(){
+            $('body').unbind().click(function(){
+              if ($('#headnav').prop('style').display == "block") {
+                  $("#headnav").hide();
+                  $('#nav').removeClass("fa fa-times");
+                  $('#nav').addClass("fa fa-bars");
+                }
+            })
+          }
+
+        $scope.bodyClick();
+
+
     });

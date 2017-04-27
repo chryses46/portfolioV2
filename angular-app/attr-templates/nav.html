@@ -5,7 +5,6 @@
 <div ng-controller="NavController">
   <div class="navcontainer">
     <div class="navhead">
-
       <h1>
         <a href="/#home">
         <span id="fname">Daniel </span>
@@ -13,11 +12,9 @@
         </a>
       </h1>
         <h2 id="subTitle">Front End Web Developer</h2>
-
     </div>
-    <div id="headnavbutton" ng-click="showNav();"><i class="fa fa-bars" aria-hidden="true"></i></div>
-
-    <nav id="headnav">
+    <div id="headnavbutton" ng-click="showNav();"><i id="nav" class="fa fa-bars" aria-hidden="true"></i></div>
+    <nav id="headnav" class="headnav">
       <ul>
         <li id="home" ng-click="menuClick('/home');"><a href="/#home" title="Home"><i class="fa fa-home"></i>Home</a></li>
         <li id="projects" ng-click="menuClick('/projects');"><a href="/#projects" title="Projects" id="proj" href="/#projects"><i class="fa fa-edit"></i>Portfolio</a>
