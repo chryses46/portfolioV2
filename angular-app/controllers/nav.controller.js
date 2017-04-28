@@ -19,18 +19,21 @@ angular.module('portfolio')
           $location.path("/" + id)
           $('#nav').removeClass("fa fa-times").addClass("fa fa-bars")
         }
-/*
-        $scope.bodyClick = function(e){
-          $('body').unbind().click(function(e){
-            if (e.target !== this){
-                console.log("click")
-                $('.headnav').hide()
-                $('#nav').removeClass("fa-times").addClass("fa-bars")
-              }
-          })
-        }
 
-       //$scope.bodyClick();
-*/
+
+        $(document).unbind().mouseup(function(e){
+          e.preventDefault;
+          var headnav = $('.headnav');
+          var navham = $('#nav');
+
+          if (!headnav.children().is(e.target) && headnav.has(e.target).length === 0 && !navham.is(e.target)){
+              console.log("click")
+              headnav.hide()
+              $('#nav').removeClass("fa-times").addClass("fa-bars")
+            }
+        })
+
+
+
 
     });

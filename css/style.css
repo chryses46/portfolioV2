@@ -9,7 +9,8 @@ body {
   text-indent: 2.5em;
   letter-spacing: 0.02em; }
   .intro p {
-    padding-top: 1.75em; }
+    padding-top: 1.75em;
+    margin: 0 0 6em 0; }
 
 .introimg {
   height: 9em;
@@ -223,7 +224,8 @@ hr {
     margin: 7em auto 0 auto;
     width: 75%; }
     .intro p {
-      padding: 2.5em 0 1em 0; }
+      padding: 2.5em 0 1em 0;
+      margin: 0 auto; }
 
   .what, .contact, .projects-intro, .about-me, .games-intro, .contact-intro {
     width: 75%; }
