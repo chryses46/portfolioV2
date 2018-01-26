@@ -1,6 +1,7 @@
 angular.module('portfolio')
     .controller('NavController', function($rootScope,$scope,$location) {
-
+        
+        console.log($location.path())
         $scope.showNav = function() {
           if ($('#nav').hasClass("fa-bars")){
             console.log('showNav-show')

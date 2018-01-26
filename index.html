@@ -2,15 +2,31 @@
 <html ng-app="portfolio" lang="en">
 
 <head>
+      <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NVJLNC5');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112965111-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112965111-1');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <link rel="icon" href="img/icon.png">
     <title ng-bind="$state.current.params.title"></title>
     <!-- Facebook Share Meta -->
     <meta property="og:url" content="http://www.danielfrank.info" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="One step closer to  your new website." />
-    <meta property="og:description" content="When you need to make a statement on the web, without making a big one on your bank account." />
+    <meta property="og:type" content="Website" />
+    <meta property="og:title" content="Custom, Professional Full Stack Web Development and SEO Optimization." />
+    <meta property="og:description" content="Dallas website design and customization. Available to local Dallas web site service, small to medium sized business, or virtually anywhere. Offering SEO optimization, custom designed websites, digital marketing and social media presence. " />
     <meta property="og:image" content="http://danielfrank.info/img/FB_Share_Image.jpg" />
     <meta property="fb:app_id" content="144574756073654" />
     <!-- Styles -->
@@ -39,32 +55,10 @@
 <header nav></header>
 
 <body>
-<!-- Load FB SDK -->
-<!--<div id="fb-root"></div>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '144574756073654',
-      cookie     : true,
-      xfbml      : true,
-      version    : 'v2.8',
-      display    : 'popup',
-    });
-    FB.AppEvents.logPageView();
-  };
-  FB.ui(
-        {
-            method: 'share',
-            href: 'danielfrank.info'
-        }, function(response){});
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=144574756073654";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>-->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVJLNC5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <div ui-view></div>
 </body>
 <footer footer></footer>

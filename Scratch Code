@@ -1,0 +1,14 @@
+Ryu Project Display scratch
+<section class="project ryu">
+  <a href="#/ryu" title="Ryu jQuery Page">
+      <div class="view ryu"></div>
+  </a>
+  <h1>Interactive Ryu App</h1>
+  <p> This is an interactive web app featuring Ryu from Street Fighter. You can make him throw a flameball! This web app was created using the jQuery JavaScript library. This app is currently optimized for desktop views.</p>
+</section>
+
+Website intro scratch
+<!--<section class="intro" id="intro">
+    <img src="img/me.jpg" alt="me.jpg" class="introimg" title="That's me!">
+    <p>Welcome to my site! I am a Front End Web Developer based out of Dallas. Allow me to help you take the next step in your online presence.</p>
+</section>-->

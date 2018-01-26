@@ -1,3 +1,10 @@
+1/26/2018
+==========
++Complete SEO overhaul
++Added GoogleAnalytics
++Re-worded Content
++Updated CSS
+
 4/27/2017
 ==========
 +Fixed formatting on home page

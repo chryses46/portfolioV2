@@ -1,7 +1,7 @@
 <section ng-controller="contactController">
 <section id="contactIntro" class="contact-intro" >
-  <h1>Contact Me</h1>
-  <p>Please feel free to contact me for more information or a quote on what I can do for you!</p>
+  <h1>Contact</h1>
+  <p>Fill out the form below to get details on web development, design and SEO for your small to medium sized business!</p>
 </section>
 <form method="post" name="form" role="form" class="contact-form" ng-submit="form.$valid && contactForm(input)" validate>
  <section id="contactDetails">
@@ -11,6 +11,7 @@
   <p>Interested In:</p>
   <select name="service" size="1" ng-model="input.service">
     <option value="" selected>Select a service</option>
+    <option value="Search Engine Optimization">Search Engine Optimization</option>
     <option value="Website Development">Website Development</option>
     <option value="Website Maintenance">Website Maintenance</option>
     <option value="Wordpress">Wordpress</option>
@@ -20,9 +21,9 @@
 </section>
 </form>
 <div id="thankYou" class="thank-you" ng-show="success">
-  <h1>Thank You</h1>
+  <h1>Thank You!</h1>
   <br/>
-  <p>I will reach out to you as soon as possible so we can get started working on what you need! Feel free to take a look at the rest of my site! Also, don't forget to like my <a href='https://www.facebook.com/dfwebdev' target='_blank'>Facebook Page!</a>
+  <p>We will reach out to you shortly. Feel free to take a look at the rest of our site! Also, don't forget to like our <a href='https://www.facebook.com/dfwebdev' target='_blank'>Facebook Page!</a>
 </div>
 <div id="error" ng-show="error">Something went wrong. Please try again later.</div>
 <ul class="contact-social">

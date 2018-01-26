@@ -2,12 +2,23 @@ body {
   font-family: "EB Garamond", sans-serif;
   font-size: 2em; }
 
+@keyframes titleAppear {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes rollBoxUp {
+  from {
+    bottom: 0; }
+  to {
+    top: 15em; } }
 .intro {
   margin: 7em auto 0 auto;
-  width: 50%;
+  width: 75%;
   text-align: justify;
   text-indent: 2.5em;
-  letter-spacing: 0.02em; }
+  letter-spacing: 0.02em;
+  display: none; }
   .intro p {
     padding-top: 1.75em;
     margin: 0 0 6em 0; }
@@ -28,7 +39,9 @@ body {
     text-align: center;
     letter-spacing: 0;
     text-indent: 0;
-    font-size: 40px; }
+    font-size: 2.5em;
+    font-weight: bolder;
+    margin: 0 auto; }
 
 .contact {
   margin: 0 auto;
@@ -40,18 +53,53 @@ body {
     text-align: center;
     letter-spacing: 0;
     text-indent: 0;
-    font-size: 40px; }
+    font-size: 2.5em;
+    font-weight: bolder;
+    margin: 0 auto; }
 
-hr {
-  width: 9%;
-  border-radius: 5em;
-  border: 0.2em solid #808080;
-  opacity: 0.4;
-  margin: 2em auto; }
+.dallas-seo-experts {
+  margin: 7em auto 0 auto;
+  width: 75%;
+  text-align: justify;
+  text-indent: 2.5em;
+  letter-spacing: 0.02em; }
+  .dallas-seo-experts h1 {
+    text-align: center;
+    letter-spacing: 0;
+    text-indent: 0;
+    font-size: 2.5em;
+    font-weight: bolder;
+    margin: 0 auto; }
+  .dallas-seo-experts h2 {
+    font-size: 2em;
+    margin: 2.25em auto 0 auto;
+    color: #a9a9a9;
+    text-align: center;
+    text-indent: 0; }
+
+.layout {
+  margin: 1.5em auto 1.5em auto;
+  display: flex; }
+  .layout .layout-image {
+    float: left;
+    width: 50%;
+    text-indent: 0;
+    margin: auto; }
+    .layout .layout-image img {
+      border-radius: 2em; }
+  .layout .layout-description {
+    float: right;
+    width: 50%;
+    text-align: justify;
+    margin: auto 1em auto 1em; }
+
+.landing-img {
+  width: 100%;
+  height: 11em; }
 
 .projects-intro {
   margin: 7em auto 0 auto;
-  width: 50%;
+  width: 75%;
   text-align: justify;
   text-indent: 2.5em;
   letter-spacing: 0.02em; }
@@ -59,98 +107,39 @@ hr {
     text-align: center;
     letter-spacing: 0;
     text-indent: 0;
-    font-size: 40px; }
-
-.about-me {
-  margin: 7em auto 0 auto;
-  width: 50%;
-  text-align: justify;
-  text-indent: 2.5em;
-  letter-spacing: 0.02em; }
-  .about-me h1 {
-    text-align: center;
-    letter-spacing: 0;
-    text-indent: 0;
-    font-size: 40px; }
-  .about-me h2 {
-    text-align: center;
-    letter-spacing: 0;
-    text-indent: 0;
-    font-size: 28px; }
-
-.games-intro {
-  margin: 7em auto 0 auto;
-  width: 50%;
-  text-align: justify;
-  text-indent: 2.5em;
-  letter-spacing: 0.02em; }
-  .games-intro h1 {
-    text-align: center;
-    letter-spacing: 0;
-    text-indent: 0;
-    font-size: 40px; }
-
-.contact-intro {
-  margin: 7em auto 0 auto;
-  width: 50%;
-  text-align: justify;
-  text-indent: 2.5em;
-  letter-spacing: 0.02em;
-  text-align: center; }
-  .contact-intro h1 {
-    text-align: center;
-    letter-spacing: 0;
-    text-indent: 0;
-    font-size: 40px; }
-
-.contact-form {
-  margin: 7em auto 0 auto;
-  width: 50%;
-  text-align: justify;
-  text-indent: 2.5em;
-  letter-spacing: 0.02em;
-  margin: 0 auto;
-  text-align: center;
-  text-indent: 0; }
-  .contact-form input, .contact-form select, .contact-form textarea {
-    width: 50%; }
-  .contact-form input, .contact-form select {
+    font-size: 2.5em;
+    font-weight: bolder;
+    margin: 0 auto; }
+  .projects-intro p {
     text-align: center; }
-  .contact-form .button {
-    width: auto; }
-
-.contact-social {
-  text-align: center;
-  font-size: 30pt;
-  list-style: none;
-  margin: 0 auto;
-  padding: 0; }
-  .contact-social li {
-    display: inline-block; }
-
-.thank-you {
-  margin: 7em auto 0 auto;
-  width: 50%;
-  text-align: justify;
-  text-indent: 2.5em;
-  letter-spacing: 0.02em; }
-  .thank-you h1 {
-    text-align: center;
-    letter-spacing: 0;
-    text-indent: 0;
-    font-size: 40px; }
-  .thank-you a {
-    color: #000; }
 
 .project {
-  margin: 0 auto;
-  width: 50%;
+  margin: 1.5em auto 0 auto;
+  width: 80%;
   text-align: justify;
   text-indent: 2em;
   letter-spacing: 0.02em; }
   .project h1 {
+    text-align: center;
+    letter-spacing: 0;
     text-indent: 0;
+    font-size: 2.5em;
+    font-weight: bolder;
+    margin: 0 auto; }
+  .project h3 {
+    font-size: 2.5em;
+    margin: 0 auto 15px auto;
+    color: #a9a9a9;
     text-align: center; }
+  .project .layout {
+    margin: 1.5em auto 1.5em auto;
+    display: flex; }
+    .project .layout .layout-image {
+      width: 100%;
+      padding: 0; }
+    .project .layout .layout-description {
+      width: 100%;
+      margin: auto auto auto 1em; }
 
 .view {
   margin: 0 auto;
@@ -189,6 +178,104 @@ hr {
   .view img {
     border-radius: 6em; }
 
+.contact-intro {
+  margin: 7em auto 0 auto;
+  width: 75%;
+  text-align: justify;
+  text-indent: 2.5em;
+  letter-spacing: 0.02em;
+  text-align: center; }
+  .contact-intro h1 {
+    text-align: center;
+    letter-spacing: 0;
+    text-indent: 0;
+    font-size: 2.5em;
+    font-weight: bolder;
+    margin: 0 auto; }
+
+.contact-form {
+  margin: 7em auto 0 auto;
+  width: 75%;
+  text-align: justify;
+  text-indent: 2.5em;
+  letter-spacing: 0.02em;
+  margin: 0 auto;
+  text-align: center;
+  text-indent: 0; }
+  .contact-form input, .contact-form select, .contact-form textarea {
+    width: 50%; }
+  .contact-form input, .contact-form select {
+    text-align: center; }
+  .contact-form .button {
+    width: auto; }
+
+.contact-social {
+  text-align: center;
+  font-size: 30pt;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0; }
+  .contact-social li {
+    display: inline-block; }
+
+.thank-you {
+  margin: 7em auto 0 auto;
+  width: 75%;
+  text-align: justify;
+  text-indent: 2.5em;
+  letter-spacing: 0.02em; }
+  .thank-you h1 {
+    text-align: center;
+    letter-spacing: 0;
+    text-indent: 0;
+    font-size: 2.5em;
+    font-weight: bolder;
+    margin: 0 auto; }
+  .thank-you a {
+    color: #000; }
+
+.about-me {
+  margin: 7em auto 0 auto;
+  width: 75%;
+  text-align: justify;
+  text-indent: 2.5em;
+  letter-spacing: 0.02em; }
+  .about-me h1 {
+    text-align: center;
+    letter-spacing: 0;
+    text-indent: 0;
+    font-size: 2.5em;
+    font-weight: bolder;
+    margin: 0 auto; }
+  .about-me h2 {
+    text-align: center;
+    letter-spacing: 0;
+    text-indent: 0;
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin: 0 auto 1em auto; }
+  .about-me h3 {
+    font-size: 2em;
+    margin: 0 auto 15px auto;
+    color: #a9a9a9;
+    text-align: center; }
+
+.games-intro {
+  margin: 7em auto 0 auto;
+  width: 75%;
+  text-align: justify;
+  text-indent: 2.5em;
+  letter-spacing: 0.02em; }
+  .games-intro h1 {
+    text-align: center;
+    letter-spacing: 0;
+    text-indent: 0;
+    font-size: 2.5em;
+    font-weight: bolder;
+    margin: 0 auto; }
+  .games-intro p {
+    text-align: center; }
+
 .footer {
   margin: 0 auto;
   height: 5em;
@@ -216,21 +303,58 @@ hr {
   body {
     font-size: 10pt; }
 
+  p {
+    font-size: 12pt; }
+
   .head {
     width: 100%;
     margin: 0 auto; }
 
-  .intro {
+  .dallas-seo-experts {
     margin: 7em auto 0 auto;
     width: 75%; }
-    .intro p {
-      padding: 2.5em 0 1em 0;
+    .dallas-seo-experts h1 {
+      font-size: 2.5em;
+      font-weight: bolder;
+      margin: 0 auto; }
+    .dallas-seo-experts h2 {
+      font-size: 2em;
+      font-weight: lighter;
+      margin: 1.5em auto 0 auto;
+      color: #a9a9a9; }
+    .dallas-seo-experts p {
+      padding: 1em 0 1em 0;
       margin: 0 auto; }
 
+  .layout {
+    margin: 0 auto 1.5em auto;
+    display: grid !important;
+    grid-template-rows: 50% 50%; }
+    .layout .layout-image {
+      grid-row-end: row2-end;
+      width: 75%;
+      text-indent: 0;
+      padding: 0; }
+    .layout .layout-description {
+      grid-row-start: auto;
+      width: 100%;
+      padding: 0;
+      margin: auto; }
+
   .what, .contact, .projects-intro, .about-me, .games-intro, .contact-intro {
-    width: 75%; }
+    width: 80%;
+    margin: 7em auto 0 auto; }
     .what h1, .contact h1, .projects-intro h1, .about-me h1, .games-intro h1, .contact-intro h1 {
-      font-size: 33px; }
+      font-size: 2.5em;
+      font-weight: bolder;
+      margin: 0 auto;
+      text-align: center; }
+    .what h3, .contact h3, .projects-intro h3, .about-me h3, .games-intro h3, .contact-intro h3 {
+      font-size: 2.5em;
+      font-weight: lighter;
+      font-style: italic;
+      margin: 0 auto 15px auto;
+      color: #a9a9a9; }
 
   hr {
     width: 9%;
@@ -244,6 +368,12 @@ hr {
     width: 75%;
     font-size: 10pt;
     letter-spacing: 0.02em; }
+    .project h3 {
+      font-size: 2.5em;
+      margin: 0 auto 15px auto;
+      color: #a9a9a9;
+      text-align: center;
+      text-indent: 0; }
 
   .view {
     height: 13em;

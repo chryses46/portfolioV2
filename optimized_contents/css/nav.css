@@ -1,0 +1,42 @@
+.navcontainer{position:fixed !important;top:0 !important;width:100% !important;height:4.5em !important;z-index:9999998 !important;left:0 !important;text-align:center !important;background-color:#ffffff !important;}
+.navcontainer a{text-decoration:none;}
+.navhead{text-align:center;margin:0 auto;width:100%;}
+.navhead img{float:right;}
+.navhead h1{margin:0;font-size:3em !important;overflow:hidden;width:100%;color:#000000 !important;font-weight:500;padding:0;font-family:"EB Garamond", sans-serif !important;}
+.navhead h1 a{text-decoration:none !important;color:inherit !important;}
+.navhead h1 ahover{text-decoration:none !important;}
+.navhead h2{font-size:1em !important;margin:0 0 1em 0;color:#000000 !important;padding:0;font-family:"EB Garamond", sans-serif !important;background:#fff !important;}
+#fname{position:relative;margin-top:0;-webkit-animation:rightSlide 2s;animation:rightSlide 2s;}
+#lname{position:relative;-webkit-animation:leftSlide 2s;animation:leftSlide 2s;}
+#subTitle{opacity:0;-webkit-animation:titleAppear 2s 2s forwards;animation:titleAppear 2s 2s forwards;}
+@keyframes rightSlide{from{right:15em;}
+to{right:0;}
+}
+@keyframes leftSlide{from{left:15em;}
+to{left:0;}
+}
+@keyframes titleAppear{from{opacity:0;}
+to{opacity:1;}
+}
+.sitename{display:inline-block;}
+#headnavbutton{margin:0 auto;position:absolute;top:0.5em;right:1.5em;font-size:1.5em !important;}
+#headnavbutton:hover{cursor:pointer;}
+.navsocial{margin:5em auto 0 auto;width:50%;text-align:center;}
+.navsocial ul{padding:0;font-size:23pt;}
+.navsocial ul li{list-style:none;display:inline;}
+.navsocial ul li:nth-child(2){margin:0 0.5em 0 0.5em;}
+.headnav{position:fixed;display:none;top:4.5em;width:100%;z-index:999998;background-color:#c5c5c5 !important;}
+.headnav ul{display:inline-table;margin:0 auto;padding:0;font-size:23pt !important;}
+.headnav #home, .headnav #projects, .headnav #about, .headnav #contact, .headnav #games{display:inline-block;list-style:none;margin:0 1em;background-color:#c5c5c5;}
+.headnav ul li:hover{cursor:pointer;}
+.headnav ul li > a{color:inherit !important;}
+.headnav #projects > a{color:#ff0000;}
+.headnav .projects{display:none;border-radius:0 0 1em 1em;position:absolute;top:100%;background-color:#c8c8c8 !important;left:0;width:100%;}
+.projects > li{display:inline-block;list-style:none;position:relative;z-index:999998;text-transform:none;margin:0 0.5em;}
+@media only screen and (max-width:700px){#headnav ul{font-size:14pt !important;}
+.projects > li{width:100%;text-align:center;}
+}
+@media only screen and (max-width:390px){#headnav{right:0;}
+#headnav ul{font-size:14pt !important;width:100%;}
+#headnav #home, #headnav #projects, #headnav #about, #headnav #contact, #headnav #games{margin:1em 0.5em 1em 0.5em;display:list-item;font-size:1.2em;}
+}

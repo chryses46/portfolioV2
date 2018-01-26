@@ -1,0 +1,17 @@
+This zip file contains optimized resources for http://danielfrank.info/. The optimized resources are listed below in the format of: 
+filename: url
+
+Note: We only include up to 10 MB of optimized contents. If the
+optimized contents of your page are larger than 10 MB, we list them in
+this file too, with 'NOT INCLUDED' to indicate those URLs require
+further optimization.
+
+css/normalize.css: http://danielfrank.info/css/normalize.css
+css/style.css: http://danielfrank.info/css/style.css
+css/nav.css: http://danielfrank.info/css/nav.css
+js/angular-touch.js: http://danielfrank.info/js/angular-touch.js
+js/angular-animate.js: http://danielfrank.info/js/angular-animate.js
+js/angular-smooth-scroll.js: http://danielfrank.info/js/angular-smooth-scroll.js
+js/app-portfolio.js: http://danielfrank.info/angular-app/app-portfolio.js
+js/amelia-artist.controller.js: http://danielfrank.info/angular-app/controllers/amelia-artist.controller.js
+image/me.jpg: http://danielfrank.info/img/me.jpg

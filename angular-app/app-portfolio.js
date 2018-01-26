@@ -8,6 +8,11 @@
       $rootScope.$on('$stateChangeSuccess', function(){
         //console.log("The current page is: " + $location.path())
         document.body.scrollTop = document.documentElement.scrollTop = 0;
+        $rootScope.page=$location.path();
+      /*  if ($rootScope.page == '/Dallas-SEO-Experts'){
+          $('.navhead').hide()
+        }else {$('.navhead').show()}
+*/
         var re = /\/[am]+\-?[port]+[\d]?/;
         if ($location.path() == re.exec($location.path()) || $location.path() == '/amelia-artist'){
           $('.navcontainer').hide();
@@ -19,28 +24,28 @@
       })
     }])
     .config(function($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise('/home');
+        $urlRouterProvider.otherwise('/Dallas-SEO-Experts');
         $stateProvider
             .state('home', {
-                url: '/home',
+                url: '/Dallas-SEO-Experts',
                 templateUrl: 'angular-app/site-templates/home.html',
-                params: {title: "Daniel Frank | Web Developer"}
+                params: {title: "Daniel Frank | Dallas SEO Expert"}
             })
             .state('about', {
-                url: '/about',
+                url: '/dallas-seo-about',
                 templateUrl: 'angular-app/site-templates/about-me-proj.html',
-                params: {title: "Daniel Frank | About Me"}
+                params: {title: "Daniel Frank | Dallas SEO About"}
             })
             .state('projects', {
-                url: '/projects',
+                url: '/dallas-seo-portfolio',
                 templateUrl: 'angular-app/site-templates/projects.html',
-                params: {title: "Daniel Frank | Portfolio"}
+                params: {title: "Daniel Frank | Dallas SEO Portfolio"}
             })
             .state('contact', {
-                url: '/contact',
+                url: '/dallas-seo-contact',
                 templateUrl: 'angular-app/site-templates/contact.html',
                 controller: 'contactController',
-                params: {title: "Daniel Frank | Contact Me"}
+                params: {title: "Daniel Frank | Dallas SEO Contact"}
             })
             .state('mail', {
                 url: '/mail',
@@ -49,9 +54,9 @@
                 params: {title: "Daniel Frank | Thank you!"}
             })
             .state('games', {
-                url: '/games',
+                url: '/dallas-seo-games',
                 templateUrl: 'angular-app/site-templates/games.html',
-                params: {title: "Daniel Frank | Games and Apps"}
+                params: {title: "Daniel Frank | Games and Web Applications"}
             })
             .state('ryu', {
                 url: '/ryu',
@@ -72,7 +77,7 @@
                 url: '/amelia-artist',
                 templateUrl: 'angular-app/site-templates/amelia-artist.html',
                 controller: 'AmeliaController',
-                params: {title: "Amelia | Artist"}
+                params: {title: "Amelia | Model - Actor - Singer"}
             })
             .state('am-port', {
                 url: '/am-port:id',

@@ -10,7 +10,6 @@
   a
     text-decoration: none
 
-
 .navhead
   text-align: center
   margin: 0 auto
@@ -33,34 +32,30 @@
         text-decoration: none !important
   h2
     font-size: 1em !important
-    margin: 0 0 1em 0
-    color: #000000 !important
+    margin: 0 auto
+    color: #a9a9a9 !important
     padding: 0
     font-family: "EB Garamond", sans-serif !important
     background: #fff !important
 
-#fname
+#dallasSEO
   position: relative
   margin-top: 0
-  -webkit-animation: rightSlide 2s
-  animation: rightSlide 2s
-
-#lname
-  position: relative
-  -webkit-animation: leftSlide 2s
-  animation: leftSlide 2s
+  -webkit-animation: topDown 2s
+  animation: topDown 2s
 
 #subTitle
+  font-style: italic
   opacity: 0
   -webkit-animation: titleAppear 2s 2s forwards
   animation: titleAppear 2s 2s forwards
 
-@keyframes rightSlide
+@keyframes topDown
   from
-    right: 15em
+    top: -7em
 
   to
-    right: 0
+    top: 0
 
 
 @keyframes leftSlide
@@ -154,7 +149,9 @@
   #headnav
     ul
       font-size: 14pt !important
-
+  .navhead
+    h1
+      font-size: 2.75em !important
   .projects > li
     width: 100%
     text-align: center
