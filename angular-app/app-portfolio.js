@@ -28,7 +28,7 @@
         $stateProvider
             .state('Dallas-SEO-Experts', {
                 url: '/Dallas-SEO-Experts',
-                templateUrl: 'angular-app/site-templates/home.html',
+                templateUrl: 'angular-app/site-templates/dallas-seo-experts.html',
                 params: {title: "Daniel Frank | Dallas SEO Expert"}
             })
             .state('about', {
