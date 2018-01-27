@@ -138,8 +138,7 @@ body {
       width: 100%;
       padding: 0; }
     .project .layout .layout-description {
-      width: 100%;
-      margin: auto auto auto 1em; }
+      width: 100%; }
 
 .view {
   margin: 0 auto;
