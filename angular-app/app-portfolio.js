@@ -26,7 +26,7 @@
     .config(function($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise('/Dallas-SEO-Experts');
         $stateProvider
-            .state('dallas-seo-experts', {
+            .state('Dallas-SEO-Experts', {
                 url: '/Dallas-SEO-Experts',
                 templateUrl: 'angular-app/site-templates/dallas-seo-experts.html',
                 params: {title: "Daniel Frank | Dallas SEO Expert"}
