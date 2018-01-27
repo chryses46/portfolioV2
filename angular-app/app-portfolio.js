@@ -16,10 +16,8 @@
         var re = /\/[am]+\-?[port]+[\d]?/;
         if ($location.path() == re.exec($location.path()) || $location.path() == '/amelia-artist'){
           $('.navcontainer').hide();
-          $('#hostFoot').show();
         } else {
           $('.navcontainer').show();
-          $('#hostFoot').hide();
         }
       })
     }])
