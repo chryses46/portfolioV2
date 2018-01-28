@@ -98,7 +98,7 @@
   z-index: 999998;
   background-color: #c5c5c5 !important; }
   .headnav ul {
-    display: inline-table;
+    table-layout: none;
     margin: 0 auto;
     padding: 0;
     font-size: 23pt !important; }
@@ -140,7 +140,17 @@
   .projects > li {
     width: 100%;
     text-align: center; } }
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 600px) {
+  #headnav ul {
+    font-size: 14pt !important; }
+
+  .navhead h1 {
+    font-size: 2.5em !important; }
+
+  .projects > li {
+    width: 100%;
+    text-align: center; } }
+@media only screen and (max-width: 360px) {
   #headnav {
     right: 0; }
     #headnav ul {
@@ -149,6 +159,9 @@
     #headnav #home, #headnav #projects, #headnav #about, #headnav #contact, #headnav #games {
       margin: 1em 0.5em 1em 0.5em;
       display: list-item;
-      font-size: 1.2em; } }
+      font-size: 1.2em; }
+
+  .navhead h1 {
+    font-size: 2em !important; } }
 
 /*# sourceMappingURL=nav.css.map */
