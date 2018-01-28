@@ -16,19 +16,17 @@
         var re = /\/[am]+\-?[port]+[\d]?/;
         if ($location.path() == re.exec($location.path()) || $location.path() == '/amelia-artist'){
           $('.navcontainer').hide();
-          $('#hostFoot').show();
         } else {
           $('.navcontainer').show();
-          $('#hostFoot').hide();
         }
       })
     }])
     .config(function($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise('/Dallas-SEO-Experts');
         $stateProvider
-            .state('home', {
+            .state('Dallas-SEO-Experts', {
                 url: '/Dallas-SEO-Experts',
-                templateUrl: 'angular-app/site-templates/home.html',
+                templateUrl: 'angular-app/site-templates/dallas-seo-experts.html',
                 params: {title: "Daniel Frank | Dallas SEO Expert"}
             })
             .state('about', {
