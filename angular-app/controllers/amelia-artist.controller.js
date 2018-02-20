@@ -79,15 +79,15 @@ angular.module('portfolio')
 
       }
 
-       //Scroll to 'home' id
+       //Scroll to 'amHome' id
       $scope.goToTop = function() {
-          var home = document.getElementById('home'),
+          var amHome = document.getElementById('amHome'),
               old = $location.hash(),
               options = {
                   duration: 300
               };
-          $location.hash(home);
-          smoothScroll(home);
+          $location.hash(amHome);
+          smoothScroll(amHome);
           $location.hash(old);
       };
 
