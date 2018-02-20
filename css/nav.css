@@ -98,7 +98,7 @@
   z-index: 999998;
   background-color: #c5c5c5 !important; }
   .headnav ul {
-    table-layout: none;
+    list-style: none;
     margin: 0 auto;
     padding: 0;
     font-size: 23pt !important; }
