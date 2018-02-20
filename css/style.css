@@ -57,20 +57,20 @@ body {
     font-weight: bolder;
     margin: 0 auto; }
 
-.dallas-seo-experts {
+.Home {
   margin: 7em auto 0 auto;
   width: 75%;
   text-align: justify;
   text-indent: 2.5em;
   letter-spacing: 0.02em; }
-  .dallas-seo-experts h1 {
+  .Home h1 {
     text-align: center;
     letter-spacing: 0;
     text-indent: 0;
     font-size: 2.5em;
     font-weight: bolder;
     margin: 0 auto; }
-  .dallas-seo-experts h2 {
+  .Home h2 {
     font-size: 2em;
     margin: 2.25em auto 0 auto;
     color: #a9a9a9;
@@ -300,10 +300,12 @@ body {
   margin: auto; }
   .blog-entries .blog-latest {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     border: 1px solid gray;
-    padding: 0.5em; }
+    padding: 0.5em;
+    text-decoration: none;
+    color: #000; }
     .blog-entries .blog-latest h3 {
       text-align: center;
       margin: auto;
@@ -424,19 +426,19 @@ body {
     width: 100%;
     margin: 0 auto; }
 
-  .dallas-seo-experts {
+  .Home {
     margin: 7em auto 0 auto;
     width: 75%; }
-    .dallas-seo-experts h1 {
+    .Home h1 {
       font-size: 2.5em;
       font-weight: bolder;
       margin: 0 auto; }
-    .dallas-seo-experts h2 {
+    .Home h2 {
       font-size: 2em;
       font-weight: lighter;
       margin: 1.5em auto 0 auto;
       color: #a9a9a9; }
-    .dallas-seo-experts p {
+    .Home p {
       padding: 1em 0 1em 0;
       margin: 0 auto; }
 
@@ -507,7 +509,9 @@ body {
     margin: auto; }
     .blog-entries .blog-latest {
       border: 1px solid gray;
-      padding: 0.5em; }
+      padding: 0.5em;
+      text-decoration: none;
+      color: #000; }
       .blog-entries .blog-latest h3 {
         text-align: center;
         margin: auto;
@@ -560,7 +564,9 @@ body {
     .blog-entries .blog-latest {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr; }
+      grid-template-rows: 1fr 1fr;
+      text-decoration: none;
+      color: #000; }
       .blog-entries .blog-latest img {
         grid-row-start: 1;
         grid-row-end: 3;

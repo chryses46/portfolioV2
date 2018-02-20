@@ -20,28 +20,28 @@
       })
     }])
     .config(function($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise('/dallas-seo-experts');
+        $urlRouterProvider.otherwise('/Home');
         $stateProvider
-            .state('dallas-seo-experts', {
-                url: '/dallas-seo-experts',
-                templateUrl: 'angular-app/site-templates/dallas-seo-experts.html',
-                params: {title: "Daniel Frank | Dallas SEO Expert"}
+            .state('Home', {
+                url: '/Home',
+                templateUrl: 'angular-app/site-templates/Home.html',
+                params: {title: "Daniel Frank | Web Developer Portfolio"}
             })
             .state('about', {
-                url: '/dallas-seo-about',
-                templateUrl: 'angular-app/site-templates/about-me-proj.html',
-                params: {title: "Daniel Frank | Dallas SEO About"}
+                url: '/about-me',
+                templateUrl: 'angular-app/site-templates/about-me.html',
+                params: {title: "Daniel Frank | About Me"}
             })
             .state('projects', {
-                url: '/dallas-seo-portfolio',
-                templateUrl: 'angular-app/site-templates/projects.html',
-                params: {title: "Daniel Frank | Dallas SEO Portfolio"}
+                url: '/web-portfolio',
+                templateUrl: 'angular-app/site-templates/web-portfolio.html',
+                params: {title: "Daniel Frank | Web Developer Portfolio"}
             })
             .state('contact', {
-                url: '/dallas-seo-contact',
-                templateUrl: 'angular-app/site-templates/contact.html',
+                url: '/contact-me',
+                templateUrl: 'angular-app/site-templates/contact-me.html',
                 controller: 'contactController',
-                params: {title: "Daniel Frank | Dallas SEO Contact"}
+                params: {title: "Daniel Frank | Contact Me"}
             })
             .state('mail', {
                 url: '/mail',
@@ -50,7 +50,7 @@
                 params: {title: "Daniel Frank | Thank you!"}
             })
             .state('games', {
-                url: '/dallas-seo-games',
+                url: '/games',
                 templateUrl: 'angular-app/site-templates/games.html',
                 params: {title: "Daniel Frank | Games and Web Applications"}
             })
@@ -70,22 +70,22 @@
                 params: {title: "Daniel Frank | Hot or Cold Game"}
             })
             .state('blog', {
-                url: '/dallas-seo-blog',
-                templateUrl: 'angular-app/site-templates/dallas-seo-blog.html',
+                url: '/web-developer-blog',
+                templateUrl: 'angular-app/site-templates/web-developer-blog.html',
                 controller:'BlogController',
-                params: {title: "Daniel Frank | Dallas SEO Tech Blog"}
+                params: {title: "Daniel Frank | Web Developer Blog"}
             })
             .state('blog-latest', {
-                url: '/dallas-seo-blog/:id',
+                url: '/web-developer-blog/:id',
                 templateUrl: 'angular-app/site-templates/blog/latest.html',
                 controller:'BlogController',
-                params: {id:"0", title: "Daniel Frank | Dallas SEO Tech Blog",index: null}
+                params: {id:"0", title: "Daniel Frank | Web Developer Blog",index: null}
             })
             .state('blog-archive', {
-                url: '/dallas-seo-blog/archive/:id',
+                url: '/web-developer-blog/archive/:id',
                 templateUrl: 'angular-app/site-templates/blog/archive.html',
                 controller:'BlogController',
-                params: {id:"0", title: "Daniel Frank | Dallas SEO Tech Blog", index: null}
+                params: {id:"0", title: "Daniel Frank | Web Developer Blog", index: null}
             })
             .state('amelia-artist', {
                 url: '/amelia-artist',
