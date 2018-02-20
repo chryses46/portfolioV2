@@ -1,0 +1,21 @@
+<section class="blog">
+  <div id="blogIntro" class="blog-intro">
+    <h1 class="blog-title">SEO Tech Blog</h1>
+    <h2 class="blog-description">A new blog dedicated to the technicalities of SEO!</h2>
+  </div>
+  <section id="blogEntries" class="blog-entries">
+    <label for="Latest"><i>Latest</i></label>
+    <a name="Latest" id="blogLatest" class="blog-latest" ui-sref="blog-latest({id: RecentPost.title.split(' ').join('-').toLowerCase(), index: RecentPost.index})">
+      <img ng-src="{{RecentPost.img}}"/>
+      <h3>{{RecentPost.title}}</h3>
+      <p>{{RecentPost.entry}}</p>
+    </a>
+    <label for="PreviousEntries"><i>Previous Entries</i></label>
+    <h2 ng-if="BlogJournal.length<=1" class="check-back">Check back later for more posts!</h2>
+    <a ng-repeat="entries in BlogJournal | orderBy: '-index' | limitTo: 4" name="PreviousEntries" class="blog-display"  ui-sref="blog-archive({id: entries.title.split(' ').join('-').toLowerCase(), index: entries.index})" ng-if="entries.index<MostRecent;">
+      <img ng-src="{{entries.img}}"/>
+      <h3>{{entries.title}}</h3>
+      <p>{{entries.entry}}</p>
+    </a>
+    </section>
+</section>

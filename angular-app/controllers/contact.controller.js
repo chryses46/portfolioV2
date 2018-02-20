@@ -1,5 +1,5 @@
 angular.module('portfolio')
-  .controller('contactController', function($rootScope,$scope,$location,$http){
+  .controller('contactController', function($scope,$location,$http){
 
     $scope.success= false;
     $scope.error=false;
@@ -20,7 +20,6 @@ angular.module('portfolio')
           $scope.error = true;
         }
       });
-      //$location.path('/mail');
     }
 
   });

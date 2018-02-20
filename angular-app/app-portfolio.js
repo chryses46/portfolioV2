@@ -5,15 +5,13 @@
     .run([ '$rootScope', '$state', '$stateParams', '$location', function ($rootScope, $state, $stateParams, $location) {
       $rootScope.$state = $state;
       $rootScope.$stateParams = $stateParams;
+
       $rootScope.$on('$stateChangeSuccess', function(){
-        //console.log("The current page is: " + $location.path())
         document.body.scrollTop = document.documentElement.scrollTop = 0;
         $rootScope.page=$location.path();
-      /*  if ($rootScope.page == '/Dallas-SEO-Experts'){
-          $('.navhead').hide()
-        }else {$('.navhead').show()}
-*/
+
         var re = /\/[am]+\-?[port]+[\d]?/;
+
         if ($location.path() == re.exec($location.path()) || $location.path() == '/amelia-artist'){
           $('.navcontainer').hide();
         } else {
@@ -22,10 +20,10 @@
       })
     }])
     .config(function($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise('/Dallas-SEO-Experts');
+        $urlRouterProvider.otherwise('/dallas-seo-experts');
         $stateProvider
-            .state('Dallas-SEO-Experts', {
-                url: '/Dallas-SEO-Experts',
+            .state('dallas-seo-experts', {
+                url: '/dallas-seo-experts',
                 templateUrl: 'angular-app/site-templates/dallas-seo-experts.html',
                 params: {title: "Daniel Frank | Dallas SEO Expert"}
             })
@@ -70,6 +68,24 @@
                 url: '/hotcold',
                 templateUrl: 'angular-app/site-templates/hotcold-proj.html',
                 params: {title: "Daniel Frank | Hot or Cold Game"}
+            })
+            .state('blog', {
+                url: '/dallas-seo-blog',
+                templateUrl: 'angular-app/site-templates/dallas-seo-blog.html',
+                controller:'BlogController',
+                params: {title: "Daniel Frank | Dallas SEO Tech Blog"}
+            })
+            .state('blog-latest', {
+                url: '/dallas-seo-blog/:id',
+                templateUrl: 'angular-app/site-templates/blog/latest.html',
+                controller:'BlogController',
+                params: {id:"0", title: "Daniel Frank | Dallas SEO Tech Blog",index: null}
+            })
+            .state('blog-archive', {
+                url: '/dallas-seo-blog/archive/:id',
+                templateUrl: 'angular-app/site-templates/blog/archive.html',
+                controller:'BlogController',
+                params: {id:"0", title: "Daniel Frank | Dallas SEO Tech Blog", index: null}
             })
             .state('amelia-artist', {
                 url: '/amelia-artist',
