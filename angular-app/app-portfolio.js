@@ -20,72 +20,72 @@
       })
     }])
     .config(function($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise('/Home');
+        $urlRouterProvider.otherwise('/home');
         $stateProvider
-            .state('Home', {
-                url: '/Home',
-                templateUrl: 'angular-app/site-templates/Home.html',
-                params: {title: "Daniel Frank | Web Developer Portfolio"}
+            .state('home', {
+                url: '/home',
+                templateUrl: 'angular-app/site-templates/home.html',
+                params: {title: "Daniel Frank - Dallas-Fort Worth Web Developer Profile"}
             })
             .state('about', {
                 url: '/about-me',
                 templateUrl: 'angular-app/site-templates/about-me.html',
-                params: {title: "Daniel Frank | About Me"}
+                params: {title: "Daniel Frank - A Little About the Dallas Native Web Developer"}
             })
             .state('projects', {
                 url: '/web-portfolio',
                 templateUrl: 'angular-app/site-templates/web-portfolio.html',
-                params: {title: "Daniel Frank | Web Developer Portfolio"}
+                params: {title: "Daniel Frank - Dallas-Fort Worth Web Developer Portfolio"}
             })
             .state('contact', {
                 url: '/contact-me',
                 templateUrl: 'angular-app/site-templates/contact-me.html',
                 controller: 'contactController',
-                params: {title: "Daniel Frank | Contact Me"}
+                params: {title: "Daniel Frank | Dallas Ft-Worth Web Developer Contact Page"}
             })
             .state('mail', {
                 url: '/mail',
                 templateUrl: 'angular-app/controllers/mail.php',
                 controller: 'contactController',
-                params: {title: "Daniel Frank | Thank you!"}
+                params: {title: "Daniel Frank - Thank you!"}
             })
             .state('games', {
                 url: '/games',
                 templateUrl: 'angular-app/site-templates/games.html',
-                params: {title: "Daniel Frank | Games and Web Applications"}
+                params: {title: "Daniel Frank - Web Apps and Games!"}
             })
             .state('ryu', {
                 url: '/ryu',
                 templateUrl: 'angular-app/site-templates/ryu-proj.html',
-                params: {title: "Daniel Frank | Ryu jQuery Project"}
+                params: {title: "Daniel Frank - Ryu jQuery Project"}
             })
             .state('shop', {
                 url: '/shop',
                 templateUrl: 'angular-app/site-templates/shop-proj.html',
-                params: {title: "Daniel Frank | Shopping List App"}
+                params: {title: "Daniel Frank - Shopping List App"}
             })
             .state('hotcold', {
                 url: '/hotcold',
                 templateUrl: 'angular-app/site-templates/hotcold-proj.html',
-                params: {title: "Daniel Frank | Hot or Cold Game"}
+                params: {title: "Daniel Frank - Hot or Cold Game"}
             })
             .state('blog', {
                 url: '/web-developer-blog',
                 templateUrl: 'angular-app/site-templates/web-developer-blog.html',
                 controller:'BlogController',
-                params: {title: "Daniel Frank | Web Developer Blog"}
+                params: {title: "Daniel Frank - Web Design and Developer Blog"}
             })
             .state('blog-latest', {
                 url: '/web-developer-blog/:id',
                 templateUrl: 'angular-app/site-templates/blog/latest.html',
                 controller:'BlogController',
-                params: {id:"0", title: "Daniel Frank | Web Developer Blog",index: null}
+                params: {id:"0", title: "Daniel Frank - Web Design and Developer Blog",index: null}
             })
             .state('blog-archive', {
                 url: '/web-developer-blog/archive/:id',
                 templateUrl: 'angular-app/site-templates/blog/archive.html',
                 controller:'BlogController',
-                params: {id:"0", title: "Daniel Frank | Web Developer Blog", index: null}
+                params: {id:"0", title: "Daniel Frank - Web Design and Developer Blog", index: null}
             })
             .state('amelia-artist', {
                 url: '/amelia-artist',
