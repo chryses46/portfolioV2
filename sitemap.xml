@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.google.com/schemas/sitemap/0.84"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.google.com/schemas/sitemap/0.84
+                      http://www.google.com/schemas/sitemap/0.84/sitemap.xsd">
+ <url>
+  <loc>https://www.danielfrank.info/#/Home</loc>
+  <priority>0.5</priority>
+ </url>
+ <url>
+  <loc>https://www.danielfrank.info/Home</loc>
+  <priority>0.5</priority>
+ </url>
+ <url>
+  <loc>https://www.danielfrank.info/#/about-me</loc>
+  <priority>0.5</priority>
+ </url>
+ <url>
+  <loc>https://www.danielfrank.info/about-me</loc>
+  <priority>0.5</priority>
+  </url>
+  <url>
+   <loc>https://www.danielfrank.info/#/web-portfolio</loc>
+   <priority>0.5</priority>
+  </url>
+  <url>
+   <loc>https://www.danielfrank.info/web-portfolio</loc>
+   <priority>0.5</priority>
+  </url>
+ <url>
+  <loc>https://www.danielfrank.info/#/contact-me</loc>
+  <priority>0.5</priority>
+ </url>
+ <url>
+  <loc>https://www.danielfrank.info/contact-me</loc>
+  <priority>0.5</priority>
+ </url>
+ <url>
+  <loc>https://www.danielfrank.info/#/games</loc>
+  <priority>0.5</priority>
+ </url>
+ <url>
+  <loc>https://www.danielfrank.info/games</loc>
+  <priority>0.5</priority>
+ </url>
+ <url>
+  <loc>https://www.danielfrank.info/#/web-developer-blog</loc>
+  <priority>0.5</priority>
+ </url>
+ <url>
+  <loc>https://www.danielfrank.info/web-developer-blog</loc>
+  <priority>0.5</priority>
+ </url>
+ <url>
+  <loc>https://www.danielfrank.info/#/amelia-artist</loc>
+  <priority>0.5</priority>
+ </url>
+ <url>
+  <loc>https://www.danielfrank.info/amelia-artist</loc>
+  <priority>0.5</priority>
+ </url>
+<url>
+ <loc>https://www.danielfrank.info/#/am-port</loc>
+ <priority>0.5</priority>
+</url>
+<url>
+ <loc>https://www.danielfrank.info/am-port</loc>
+ <priority>0.5</priority>
+</url>
+</urlset>

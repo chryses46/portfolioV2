@@ -1,35 +1,36 @@
 angular.module('portfolio')
     .controller('NavController', function($rootScope,$scope,$location) {
-      $('#headnav').hide()
-        $scope.showNav = function() {
-          if ($('#nav').hasClass("fa-bars")){
-            $('#nav').removeClass("fa-bars").addClass("fa-times")
-            $('.headnav').show()
-          } else {
-            $('#nav').removeClass("fa-times").addClass("fa-bars")
-            $('#headnav').hide()
+
+      $scope.showNav = function() {
+        if ($('#buttonContainer').hasClass("vbars")){
+          console.log("showNav->hide")
+          $('#buttonContainer').removeClass("vbars").addClass("bars");
+          $('#topnav').hide();
+        } else{
+            console.log("showNav->show");
+            $('#buttonContainer').removeClass("bars").addClass("vbars");
+            $('#topnav').show();
           }
-        }
+      }
 
         $scope.menuClick = function(id) {
-          $('#headnav').hide()
+          console.log("menuClick function called.")
+          $('#topnav').hide()
           $location.path("/" + id)
-          $('#nav').removeClass("fa-times").addClass("fa-bars")
+          $('#buttonContainer').removeClass("vbars").addClass("bars")
         }
 
 
-        $(document).unbind().mouseup(function(e){
-          e.preventDefault;
-          var headnav = $('#headnav');
-          var navham = $('#nav');
+      $(document).unbind().mouseup(function(e){
+        console.log("mouseup function called.");
+        e.preventDefault;
+        var buttonContainer = $('#buttonContainer');
+        var topnav = $('#topnav');
 
-          if (!headnav.children().is(e.target) && headnav.has(e.target).length === 0 && !navham.is(e.target)){
-              headnav.hide()
-              $('#nav').removeClass("fa-times").addClass("fa-bars")
-            }
-        })
-
-
-
-
+        if (!topnav.children().is(e.target) && !buttonContainer.is(e.target)){
+          console.log("mouseup-> hide");
+          $('#buttonContainer').removeClass("vbars").addClass("bars");
+          $('#topnav').hide();
+        }
+      })
     });
