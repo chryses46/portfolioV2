@@ -1,3 +1,11 @@
+3/7/2018
+==========
++Fixed nav bar drop down code
++Replaced nav button image to accommodate coding.
++Updated formatting of the nav.
++Google Tag Manager was causing content not to show properly. This has been disabled temporarily.
++Updated sitemap and robots.txt
+
 2/22/2018
 ==========
 +Removed SEO branding and replaced with 'Daniel Frank' branding
