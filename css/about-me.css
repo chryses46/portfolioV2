@@ -1,0 +1,135 @@
+.masthead {
+  /* Layout Delcarations */
+  padding: 4em 0;
+  width: 100%;
+  background-image: url("../img/background_geo.jpg");
+  background-size: 100% 100%;
+  /* Type Declarations */
+  font-size: 40px;
+}
+
+.masthead-intro {
+  /* Layout Delcarations */
+  margin-bottom: 0.1em;
+  margin-right: 12em;
+  text-align: right;
+  /* Type Declarations */
+  font-family: "Gloria Hallelujah", sans-serif;
+  font-weight: bold;
+  color: #cc5200;
+}
+
+.masthead-heading {
+  /* Layout Delcarations */
+  margin-top: -0.2em;
+  text-align: right;
+  /* Type Declarations */
+  font-family: "Russo One", sans-serif;
+  font-size: 90px;
+  color: #e65c00;
+}
+
+.interesting > p,
+{
+  margin-top: -2em;
+}
+
+.interesting > h2 {
+  margin-bottom: -2em;
+}
+
+.interesting1 {
+  margin-top: -1em;
+}
+
+.bodytext {
+  /* Layout Delcarations */
+  text-align: justify;
+  letter-spacing: .01em;
+  text-indent: 3em;
+  padding: 3em;
+  /* Type Declarations */
+  font-family: "Cardo", sans-serif;
+  font-size: 20px;
+}
+
+h1,
+h2 {
+  /* Layout Declarations */
+  text-align: center;
+  /* Type Declarations */
+  color: rgb(165, 160, 114);
+  font-family: "Cardo" sans-serif;
+}
+
+a:link {
+  color: darkblue;
+}
+
+a:visited {
+  color: darkgreen;
+}
+
+a:hover {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+}
+
+.h3f {
+  margin-top: -2em;
+  text-align: center;
+}
+
+ul > li {
+  display: inline-block;
+}
+
+ul {
+  margin-right: 3em;
+}
+
+.foot {
+  padding: 4em 0;
+  background-color: rgb(111, 115, 121);
+  text-align: center;
+}
+
+.row  {
+  width: 100%;
+}
+
+.fa-github {
+  color: #000;
+}
+
+.fa-linkedin-square {
+  color: #1a53ff;
+}
+
+@media only screen and (max-width: 700px) {
+  .masthead-heading {
+    font-size: 1em;
+    color: #e65c00;
+  }
+  .masthead-intro {
+    color: #cc5200;
+    font-size: .5em;
+    margin-right: 10em;
+  }
+  .masthead {
+    padding: 2em 0;
+  }
+  .row p{
+    padding: 1em;
+    text-indent: 1em;
+    letter-spacing: .01em;
+    font-size: 20px;
+  }
+
+  .row .interesting p {
+    margin-top: 2em;
+  }
+}
