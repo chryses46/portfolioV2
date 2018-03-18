@@ -3,36 +3,35 @@
 
 <head>
       <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    <!--<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-NVJLNC5');</script>
-    <!-- End Google Tag Manager -->
+     End Google Tag Manager -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112965111-1"></script>
+    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112965111-1"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-112965111-1');
-    </script>
+    </script> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <link rel="icon" href="img/icon.png">
     <title ng-bind="$state.current.params.title"></title>
-    <!-- Facebook Share Meta -->
+    <!--Meta tags-->
     <meta property="og:url" content="https://www.danielfrank.info/" />
     <meta property="og:type" content="Website" />
-    <meta property="og:title" content="Custom, Professional Full Stack Web Development and SEO Optimization." />
-    <meta property="og:description" content="Dallas website design and customization. Available to local Dallas web site service, small to medium sized business, or virtually anywhere. Offering SEO optimization, custom designed websites, digital marketing and social media presence. " />
-    <meta property="og:image" content="http://danielfrank.info/img/FB_Share_Image.jpg" />
+    <meta property="og:title" content="Daniel Frank - Dallas-Fort Worth Web Developer Profile" />
+    <meta property="og:description" content="A look into the world of me, Daniel Frank. A Dallas-Fort Worth web designer and developer. Enjoy my web portfolio!" />
+    <meta property="og:image" content="http://danielfrank.info/img/meta_image.jpg" />
     <meta property="fb:app_id" content="144574756073654" />
     <meta name="google-site-verification" content="DEzrJP3m7l6n8_8E4koZG-Zu47zJrzQeeK95V9WSPD8">
     <!-- Styles -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=EB+Garamond'>
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -50,16 +49,12 @@
     <script src="angular-app/app-portfolio.js"></script>
     <script src="angular-app/controllers/nav.controller.js"></script>
     <script src="angular-app/controllers/contact.controller.js"></script>
+    <script src="angular-app/controllers/blog.controller.js"></script>
     <script src="angular-app/controllers/amelia-artist.controller.js"></script>
 
 </head>
 <header nav></header>
-
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVJLNC5"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 <div ui-view></div>
 </body>
 <footer footer></footer>

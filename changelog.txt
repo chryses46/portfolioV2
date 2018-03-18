@@ -1,3 +1,27 @@
+CURRENT BRANCH:BLOG REDO
+3/18/2018
+==========
++Hiding blog, for now. Re-tooling into new page-driven design. Working out the kinks.
++Fixed dead directives in main js
++Updating some CSS in hotcold-proj.html
+
+
+3/7/2018
+==========
++Fixed nav bar drop down code
++Replaced nav button image to accommodate coding.
++Updated formatting of the nav.
++Google Tag Manager was causing content not to show properly. This has been disabled temporarily.
++Updated sitemap and robots.txt
+
+2/22/2018
+==========
++Removed SEO branding and replaced with 'Daniel Frank' branding
++Added a Blog!
++First blog posts
++Updated to Font Awesome 5.0
++Removed WordPress link until WordPress established again.
+
 1/26/2018
 ==========
 +Complete SEO overhaul

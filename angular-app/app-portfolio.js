@@ -5,71 +5,71 @@
     .run([ '$rootScope', '$state', '$stateParams', '$location', function ($rootScope, $state, $stateParams, $location) {
       $rootScope.$state = $state;
       $rootScope.$stateParams = $stateParams;
+
+      //Do this each time the page loads:
       $rootScope.$on('$stateChangeSuccess', function(){
-        //console.log("The current page is: " + $location.path())
         document.body.scrollTop = document.documentElement.scrollTop = 0;
         $rootScope.page=$location.path();
-      /*  if ($rootScope.page == '/Dallas-SEO-Experts'){
-          $('.navhead').hide()
-        }else {$('.navhead').show()}
-*/
+
         var re = /\/[am]+\-?[port]+[\d]?/;
+
         if ($location.path() == re.exec($location.path()) || $location.path() == '/amelia-artist'){
           $('.navcontainer').hide();
         } else {
-          $('.navcontainer').show();
-        }
-      })
+            $('.navcontainer').show();
+          }
+        })
     }])
     .config(function($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise('/Dallas-SEO-Experts');
+        $urlRouterProvider.otherwise('/home');
+        //Sates and URLs
         $stateProvider
-            .state('Dallas-SEO-Experts', {
-                url: '/Dallas-SEO-Experts',
-                templateUrl: 'angular-app/site-templates/dallas-seo-experts.html',
-                params: {title: "Daniel Frank | Dallas SEO Expert"}
+            .state('home', {
+                url: '/home',
+                templateUrl: 'angular-app/site-templates/home.html',
+                params: {title: "Daniel Frank - Dallas-Fort Worth Web Developer Profile"}
             })
             .state('about', {
-                url: '/dallas-seo-about',
-                templateUrl: 'angular-app/site-templates/about-me-proj.html',
-                params: {title: "Daniel Frank | Dallas SEO About"}
+                url: '/about-me',
+                templateUrl: 'angular-app/site-templates/about-me.html',
+                params: {title: "Daniel Frank - A Little About the Dallas Native Web Developer"}
             })
             .state('projects', {
-                url: '/dallas-seo-portfolio',
-                templateUrl: 'angular-app/site-templates/projects.html',
-                params: {title: "Daniel Frank | Dallas SEO Portfolio"}
+                url: '/web-portfolio',
+                templateUrl: 'angular-app/site-templates/web-portfolio.html',
+                params: {title: "Daniel Frank - Dallas-Fort Worth Web Developer Portfolio"}
             })
             .state('contact', {
-                url: '/dallas-seo-contact',
-                templateUrl: 'angular-app/site-templates/contact.html',
+                url: '/contact-me',
+                templateUrl: 'angular-app/site-templates/contact-me.html',
                 controller: 'contactController',
-                params: {title: "Daniel Frank | Dallas SEO Contact"}
+                params: {title: "Daniel Frank | Dallas Ft-Worth Web Developer Contact Page"}
             })
             .state('mail', {
                 url: '/mail',
                 templateUrl: 'angular-app/controllers/mail.php',
                 controller: 'contactController',
-                params: {title: "Daniel Frank | Thank you!"}
+                params: {title: "Daniel Frank - Thank you!"}
             })
             .state('games', {
-                url: '/dallas-seo-games',
+                url: '/games',
                 templateUrl: 'angular-app/site-templates/games.html',
-                params: {title: "Daniel Frank | Games and Web Applications"}
+                params: {title: "Daniel Frank - Web Apps and Games!"}
             })
             .state('ryu', {
                 url: '/ryu',
                 templateUrl: 'angular-app/site-templates/ryu-proj.html',
-                params: {title: "Daniel Frank | Ryu jQuery Project"}
+                params: {title: "Daniel Frank - Ryu jQuery Project"}
             })
             .state('shop', {
                 url: '/shop',
                 templateUrl: 'angular-app/site-templates/shop-proj.html',
-                params: {title: "Daniel Frank | Shopping List App"}
+                params: {title: "Daniel Frank - Shopping List App"}
             })
             .state('hotcold', {
                 url: '/hotcold',
                 templateUrl: 'angular-app/site-templates/hotcold-proj.html',
-                params: {title: "Daniel Frank | Hot or Cold Game"}
+                params: {title: "Daniel Frank - Hot or Cold Game"}
             })
             .state('amelia-artist', {
                 url: '/amelia-artist',
@@ -83,9 +83,32 @@
                 controller: 'AmeliaController',
                 params: {id: "0", title: "Amelia | Artist - Portfolio"}
             })
+
+            /* On Hold:
+
+            .state('blog', {
+                url: '/web-developer-blog',
+                templateUrl: 'angular-app/site-templates/web-developer-blog.html',
+                controller:'BlogController',
+                params: {title: "Daniel Frank - Web Design and Developer Blog"}
+            })
+            .state('blog-latest', {
+                url: '/web-developer-blog/:id',
+                templateUrl: 'angular-app/site-templates/blog/latest.html',
+                controller:'BlogController',
+                params: {id:"0", title: "Daniel Frank - Web Design and Developer Blog",index: null}
+            })
+            .state('blog-archive', {
+                url: '/web-developer-blog/archive/:id',
+                templateUrl: 'angular-app/site-templates/blog/archive.html',
+                controller:'BlogController',
+                params: {id:"0", title: "Daniel Frank - Web Design and Developer Blog", index: null}
+            })
+
+            */
     })
 
-    // Attirbute Directives
+    //Directives
     .directive('nav', function() {
             return {
                 restrict: 'A',
@@ -99,51 +122,61 @@
         return {
             restrict: 'A',
             scope: false,
-            templateUrl: 'angular-app/attr-templates/footer.html'
+            templateUrl: 'angular-app/attr-templates/footer.html',
+            controller: 'NavController',
+            controllerAs: 'nav'
         }
     })
-    .directive('intro', function() {
+    .directive('home', function() {
         return {
             restrict: 'A',
             scope: false,
-            templateUrl: 'angular-app/attr-templates/intro.html'
+            templateUrl: 'angular-app/site-templates/home.html'
         }
     })
     .directive('about', function() {
         return {
             restrict: 'A',
             scope: false,
-            templateUrl: 'angular-app/attr-templates/about.html'
+            templateUrl: 'angular-app/site-templates/about-me.html'
         };
     })
     .directive('ryu', function() {
         return {
             restrict: 'A',
             scope: false,
-            templateUrl: 'angular-app/attr-templates/ryu.html'
+            templateUrl: 'angular-app/site-templates/ryu-proj.html'
         };
     })
     .directive('shopping', function() {
         return {
             restrict: 'A',
             scope: false,
-            templateUrl: 'angular-app/attr-templates/shopping.html'
+            templateUrl: 'angular-app/site-templates/shop-proj.html'
         }
     })
     .directive('hotcold', function() {
         return {
             restrict: 'A',
             scope: false,
-            templateUrl: 'angular-app/attr-templates/hotcold.html'
+            templateUrl: 'angular-app/site-templates/hotcold-proj.html'
         }
     })
     .directive('wordpress', function() {
         return {
             restrict: 'A',
             scope: false,
-            templateUrl: 'angular-app/attr-templates/wordpress.html'
+            templateUrl: 'angular-app/site-templates/wordpress.html'
         }
     })
-
-
+    /*.directive('entry', function() {
+            return {
+                restrict: 'A',
+                scope: false,
+                templateUrl: 'angular-app/site-templates/blog/entry.html',
+                controller: 'BlogController',
+                controllerAs: 'blog'
+            }
+        })
+      */
 })();

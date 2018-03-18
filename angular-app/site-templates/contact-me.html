@@ -1,6 +1,16 @@
+<head>
+  <meta property="og:url" content="https://www.danielfrank.info/#/contact-me" />
+  <meta property="og:type" content="Website" />
+  <meta property="og:title" content="Daniel Frank - Dallas Ft-Worth Web Developer Contact Page" />
+  <meta property="og:description" content="Contact me now to see how I can help with your web design and development needs!" />
+  <meta property="og:image" content="http://danielfrank.info/img/meta_image.jpg" />
+  <meta property="fb:app_id" content="144574756073654" />
+  <meta name="google-site-verification" content="DEzrJP3m7l6n8_8E4koZG-Zu47zJrzQeeK95V9WSPD8">
+</head>
+
 <section ng-controller="contactController">
 <section id="contactIntro" class="contact-intro" >
-  <h1>Contact</h1>
+  <h1>Contact Me</h1>
   <p>Fill out the form below to get details on web development, design and SEO for your small to medium sized business!</p>
 </section>
 <form method="post" name="form" role="form" class="contact-form" ng-submit="form.$valid && contactForm(input)" validate>
@@ -19,15 +29,16 @@
   <p>Message<span>*</span></p><textarea name="message" rows="6" cols="25" ng-model="input.message" required></textarea><br/>
   <button type="submit" name="submit" value="submit">Submit</button><input class="button" type="reset" value="Clear">
 </section>
-</form>
+
 <div id="thankYou" class="thank-you" ng-show="success">
   <h1>Thank You!</h1>
   <br/>
-  <p>We will reach out to you shortly. Feel free to take a look at the rest of our site! Also, don't forget to like our <a href='https://www.facebook.com/dfwebdev' target='_blank'>Facebook Page!</a>
+  <p>I will reach out to you shortly. Feel free to take a look at the rest of my site! Also, don't forget to like our <a href='https://www.facebook.com/dfwebdev' target='_blank'>Facebook Page!</a>
 </div>
 <div id="error" ng-show="error">Something went wrong. Please try again later.</div>
+</form>
 <ul class="contact-social">
-  <li id="li"><a href="https://www.linkedin.com/in/daniel-frank-598b9960" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
-  <li id="fb"><a href="http://www.facebook.com/dfwebdev" target="_blank"><i class="fa fa-facebook-square" ></i></a></li>
+  <li id="li"><a href="https://www.linkedin.com/in/daniel-frank-598b9960" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+  <li id="fb"><a href="http://www.facebook.com/dfwebdev" target="_blank"><i class="fab fa-facebook-square" ></i></a></li>
 </ul>
 </section>
