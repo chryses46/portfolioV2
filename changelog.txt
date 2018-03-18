@@ -1,3 +1,11 @@
+CURRENT BRANCH:BLOG REDO
+3/18/2018
+==========
++Hiding blog, for now. Re-tooling into new page-driven design. Working out the kinks.
++Fixed dead directives in main js
++Updating some CSS in hotcold-proj.html
+
+
 3/7/2018
 ==========
 +Fixed nav bar drop down code
