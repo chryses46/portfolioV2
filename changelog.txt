@@ -1,4 +1,3 @@
-CURRENT BRANCH:BLOG REDO
 3/18/2018
 ==========
 +Hiding blog, for now. Re-tooling into new page-driven design. Working out the kinks.
