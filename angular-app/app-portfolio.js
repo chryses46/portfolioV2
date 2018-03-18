@@ -6,6 +6,7 @@
       $rootScope.$state = $state;
       $rootScope.$stateParams = $stateParams;
 
+      //Do this each time the page loads:
       $rootScope.$on('$stateChangeSuccess', function(){
         document.body.scrollTop = document.documentElement.scrollTop = 0;
         $rootScope.page=$location.path();
@@ -15,12 +16,13 @@
         if ($location.path() == re.exec($location.path()) || $location.path() == '/amelia-artist'){
           $('.navcontainer').hide();
         } else {
-          $('.navcontainer').show();
-        }
-      })
+            $('.navcontainer').show();
+          }
+        })
     }])
     .config(function($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise('/home');
+        //Sates and URLs
         $stateProvider
             .state('home', {
                 url: '/home',
@@ -69,6 +71,21 @@
                 templateUrl: 'angular-app/site-templates/hotcold-proj.html',
                 params: {title: "Daniel Frank - Hot or Cold Game"}
             })
+            .state('amelia-artist', {
+                url: '/amelia-artist',
+                templateUrl: 'angular-app/site-templates/amelia-artist.html',
+                controller: 'AmeliaController',
+                params: {title: "Amelia | Model - Actor - Singer"}
+            })
+            .state('am-port', {
+                url: '/am-port:id',
+                templateUrl: 'angular-app/site-templates/am-portfolio.html',
+                controller: 'AmeliaController',
+                params: {id: "0", title: "Amelia | Artist - Portfolio"}
+            })
+
+            /* On Hold:
+
             .state('blog', {
                 url: '/web-developer-blog',
                 templateUrl: 'angular-app/site-templates/web-developer-blog.html',
@@ -87,21 +104,11 @@
                 controller:'BlogController',
                 params: {id:"0", title: "Daniel Frank - Web Design and Developer Blog", index: null}
             })
-            .state('amelia-artist', {
-                url: '/amelia-artist',
-                templateUrl: 'angular-app/site-templates/amelia-artist.html',
-                controller: 'AmeliaController',
-                params: {title: "Amelia | Model - Actor - Singer"}
-            })
-            .state('am-port', {
-                url: '/am-port:id',
-                templateUrl: 'angular-app/site-templates/am-portfolio.html',
-                controller: 'AmeliaController',
-                params: {id: "0", title: "Amelia | Artist - Portfolio"}
-            })
+
+            */
     })
 
-    // Attirbute Directives
+    //Directives
     .directive('nav', function() {
             return {
                 restrict: 'A',
@@ -115,51 +122,61 @@
         return {
             restrict: 'A',
             scope: false,
-            templateUrl: 'angular-app/attr-templates/footer.html'
+            templateUrl: 'angular-app/attr-templates/footer.html',
+            controller: 'NavController',
+            controllerAs: 'nav'
         }
     })
-    .directive('intro', function() {
+    .directive('home', function() {
         return {
             restrict: 'A',
             scope: false,
-            templateUrl: 'angular-app/attr-templates/intro.html'
+            templateUrl: 'angular-app/site-templates/home.html'
         }
     })
     .directive('about', function() {
         return {
             restrict: 'A',
             scope: false,
-            templateUrl: 'angular-app/attr-templates/about.html'
+            templateUrl: 'angular-app/site-templates/about-me.html'
         };
     })
     .directive('ryu', function() {
         return {
             restrict: 'A',
             scope: false,
-            templateUrl: 'angular-app/attr-templates/ryu.html'
+            templateUrl: 'angular-app/site-templates/ryu-proj.html'
         };
     })
     .directive('shopping', function() {
         return {
             restrict: 'A',
             scope: false,
-            templateUrl: 'angular-app/attr-templates/shopping.html'
+            templateUrl: 'angular-app/site-templates/shop-proj.html'
         }
     })
     .directive('hotcold', function() {
         return {
             restrict: 'A',
             scope: false,
-            templateUrl: 'angular-app/attr-templates/hotcold.html'
+            templateUrl: 'angular-app/site-templates/hotcold-proj.html'
         }
     })
     .directive('wordpress', function() {
         return {
             restrict: 'A',
             scope: false,
-            templateUrl: 'angular-app/attr-templates/wordpress.html'
+            templateUrl: 'angular-app/site-templates/wordpress.html'
         }
     })
-
-
+    /*.directive('entry', function() {
+            return {
+                restrict: 'A',
+                scope: false,
+                templateUrl: 'angular-app/site-templates/blog/entry.html',
+                controller: 'BlogController',
+                controllerAs: 'blog'
+            }
+        })
+      */
 })();
